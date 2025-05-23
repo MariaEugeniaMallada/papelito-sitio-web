@@ -95,9 +95,9 @@ nav {
   color: black;
 }
 
-/*.boton {
+.boton {
   margin-top:auto; 
-}*/
+}
 
 footer {
   font-size: 28px;
@@ -119,20 +119,22 @@ footer {
   height: 400px;
   width: 100%;
 }
- .card-horizontal {
+  /*.card-horizontal {
   max-width: 1440px;
   margin-bottom: 1.5rem;
   height: 250px; 
+  display: flex;
+  flex-wrap: wrap; 
   overflow: hidden;
-
+ }
   .row {
     height: 100%;
   }
 
   img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+    width:auto;
+    height: 50%;
+    object-fit:hidden;
     border-top-left-radius: 0.5rem;
     border-bottom-left-radius: 0.5rem;
   }
@@ -142,9 +144,25 @@ footer {
     flex-direction: column;
     justify-content: space-between; 
     padding: 1rem;
+  }*/
+    
+  .card {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-}
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: hidden;
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+    }
+  }
+
 
 
 .video-container {
