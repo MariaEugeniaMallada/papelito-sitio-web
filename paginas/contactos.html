@@ -10,7 +10,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Contacto Papelito</title>
+    <link rel="shortcut icon" href="../imagenes/Sin título-1.png" type="gatito de origami">
   <head>
   <body>      
     <header>
@@ -22,7 +24,7 @@
           </a>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-ligth" type="submit">Buscador</button>
+            <button class="btn btn-outline-ligth buscador" type="submit">Buscar</button>
           </form>
         </div>
       </nav>
@@ -50,7 +52,7 @@
         </div>
       </nav>
     </header>    
-    <div class="card mb-3" style="max-width:1440px;">
+    <div class="card mb-3 card" style="max-width:1440px;">
       <div class="row g-0">
         <div class="col-md-4">
           <img src="../imagenes/WhatsApp Image 2025-03-27 at 8.01.53 PM (1).jpeg" class="img-fluid rounded-start" alt="Chica con dos flores de origami en el pelo">
@@ -78,12 +80,15 @@
       <p>Facebook: Papelito.uy</p>
       <p>Tik Tok: Papelito.uy</p>
       <p>YouTube: Papelito.uy.Origamis</p>
-      <button type="button" class="btn btn-light"
+      <button type="button" class="btn btn-light boton-principal scale"
       style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
 Ponte en Contacto
 </button>
-      <p>Términos y condiciones.</p>
     </footer>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"

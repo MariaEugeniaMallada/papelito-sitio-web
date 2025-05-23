@@ -10,7 +10,9 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Papelito</title>
+    <link rel="shortcut icon" href="./imagenes/Sin título-1.png" type="gatito de origami">
   </head>
   <body>
     <header>
@@ -22,7 +24,7 @@
           </a>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-ligth" type="submit">Buscador</button>
+            <button class="btn btn-outline-ligth buscador" type="submit">Buscar</button>
           </form>
         </div>
       </nav>
@@ -73,36 +75,48 @@
     </div>
     <h1>Bienvenidos a Papelito</h1>
     <h2>Novedades</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4" data-aos="zoom-in-up">
       <div class="col">
         <div class="card h-100">
-          <img src="./imagenes/WhatsApp Image 2025-03-27 at 8.01.49 PM (3).jpeg" class="card-img-top" alt="Maceta y Flores de Origami">
+          <img src="./imagenes/WhatsApp Image 2025-03-27 at 8.01.49 PM (3).jpeg" class="card-img-top img2" alt="Maceta y Flores de Origami">
           <div class="card-body">
             <h5 class="card-title t">Nuevo Producto</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+             <button type="button" class="btn btn-light boton-principal"
+                 style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                 Mas Inf.
+             </button>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="./imagenes/WhatsApp Image 2025-03-27 at 8.01.48 PM (1).jpeg" class="card-img-top" alt="Participantes de una clase de origami">
+          <img src="./imagenes/WhatsApp Image 2025-03-27 at 8.01.48 PM (1).jpeg" class="card-img-top img2" alt="Participantes de una clase de origami">
           <div class="card-body">
             <h5 class="card-title t">Proximo Evento</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+             <button type="button" class="btn btn-light boton-principal"
+              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+               Mas Inf.
+             </button>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="card h-100">
-          <img src="./imagenes/WhatsApp Image 2025-03-27 at 8.01.48 PM.jpeg" class="card-img-top" alt="...">
+          <img src="./imagenes/WhatsApp Image 2025-03-27 at 8.01.48 PM.jpeg" class="card-img-top img2" alt="...">
           <div class="card-body">
             <h5 class="card-title t">Nuevo Taller</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+           <button type="button" class="btn btn-light boton-principal"
+            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+            Mas Inf.
+           </button>
           </div>
         </div>
       </div>
     </div>
-    <div class="card mb-3" style="max-width:1440px;">
+    <div class="card card-horizontal"  data-aos="zoom-in-up">
       <div class="row g-0">
         <div class="col-md-4">
           <img src="./imagenes/WhatsApp Image 2025-03-27 at 8.01.49 PM.jpeg" class="img-fluid rounded-start" alt="Chica con dos flores de origami en el pelo">
@@ -126,7 +140,10 @@
       </div>
     </div>
     <h3>También puedes seguirnos en YouTube.</h3>
-    <video src="./videos/Corazón 720.mp4" class="object-fit-fill" controls></video>
+    <div class="video-container">
+      <video src="./videos/Corazón 720.mp4" class="video" data-aos="zoom-in-up" controls></video>
+    </div>
+
      </section>
     <footer>
       <h4>Contactos</h4>
@@ -136,12 +153,15 @@
       <p>Facebook: Papelito.uy</p>
       <p>Tik Tok: Papelito.uy</p>
       <p>YouTube: Papelito.uy.Origamis</p>
-      <button type="button" class="btn btn-light"
+      <button type="button" class="btn btn-light boton-principal scale"
         style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-  Ponte en Contacto
-</button>
-      <p>Términos y condiciones.</p>
+          Ponte en Contacto
+      </button>
     </footer>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+    AOS.init();
+   </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
