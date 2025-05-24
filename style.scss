@@ -116,27 +116,22 @@ footer {
   color: #ffa725 !important;
 }
 .img {
-  height: 400px;
+  height: 300px;
   width: 100%;
 }
     
-  .card {
-    display: flex;
-    flex-wrap: wrap;
-  }
+.cardh {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  flex-wrap: nowrap; 
 
-  .card img {
-    width: 100%;
-    height: auto;
-    object-fit: hidden;
-  }
-
-  @media (max-width: 768px) {
-    .card {
-      flex-direction: column;
+  .cardh-img {
+    width: 450px;  
+    height: 300px; 
+    object-fit: cover; }
     }
-  }
-
 
 
 .video-container {

@@ -90,9 +90,10 @@ nav ul li {
   color: black;
 }
 
-/*.boton {
-  margin-top:auto; 
-}*/
+.boton, .boton-principal {
+  margin-top: auto;
+}
+
 footer {
   font-size: 28px;
   color: #e9def5;
@@ -111,31 +112,21 @@ footer h4 {
 }
 
 .img {
-  height: 400px;
+  height: 300px;
   width: 100%;
 }
 
-.card-horizontal {
-  max-width: 1440px;
-  margin-bottom: 1.5rem;
-  height: 250px;
-  overflow: hidden;
-}
-.card-horizontal .row {
-  height: 100%;
-}
-.card-horizontal img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-}
-.card-horizontal .card-body {
+.cardh {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
+.cardh .cardh-img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
 }
 
 .video-container {
