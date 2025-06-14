@@ -11,9 +11,9 @@ $font-stack: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 }
 
 body {
-  background-color: #eae9e7;
+  background-color: #e2dcc3;
   font-family: $font-stack;
-  color: black;
+  color:#454544;
 }
 
 h1 {
@@ -38,7 +38,7 @@ h2 {
   padding: 15px;
 
   p {
-    color: black;
+    color:#454544;
     font-size: 16px;
     text-align: center;
     @include margin(50, 20, 20, 20);
@@ -55,7 +55,7 @@ h2 {
 }
 
 nav {
-  background-color:#eae9e7;
+  background-color:#e2dcc3;
 
   ul {
     display: flex;
@@ -90,7 +90,7 @@ nav {
     gap: 8px;
     font-size: 18px;
     text-decoration: none;
-    color: #e9def5;
+    color: #e2dcc3;
 
     img {
       width: 40px;
@@ -99,7 +99,7 @@ nav {
   }
 }
 .boton {
-  background-color:#eae9e7;
+  background-color:#e2dcc3;
   color: $color_primario;
   cursor: pointer;
   margin-top: auto;
@@ -122,8 +122,8 @@ nav {
   text-align: center;
 
   &:hover {
-    background-color: #6bd1c2;
-    color:#eae9e7;
+    background-color: #7e4f16;
+    color:#e2dcc3;
   }
 }
 
@@ -134,7 +134,7 @@ nav {
 }
 
 .bg-body-tertiary {
-  background-color: #eae9e7 !important;
+  background-color: #e2dcc3 !important;
 }
 
 .card {
@@ -142,6 +142,7 @@ nav {
   flex-direction: column;
   height: 100%;
   padding: 1.5rem;
+  background-color:white;
 }
 
 .card-body {
@@ -165,13 +166,13 @@ nav {
 .card-text {
   flex: 1;
   font-size: 1rem;
-  color: black;
+  color:#454544;
   margin-bottom: 1rem;
 }
 
 
 footer {
-  color: #eae9e7;
+  color: #e2dcc3;
   @extend .bg-body-tertiary;
 
   a {
@@ -256,7 +257,7 @@ p {
 }
 
 .buscador {
-  color: #e9def5;
+  color:#7e4f16;
   transition: color 1s ease-in-out;
   cursor: pointer;
 
