@@ -29,7 +29,8 @@ h1 p {
 h2 {
   color: #A3B18A;
   font-size: 40px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Poiret One", cursive;
+  font-weight: bolder;
   text-align: center;
   margin-top: 20;
   margin-bottom: 20;
@@ -74,18 +75,19 @@ h2 p {
   align-items: center;
 }
 .navbar .buscador-izquierda {
-  flex: 0 0 auto;
+  margin-left: auto;
 }
 .navbar .buscador-izquierda form {
   display: flex;
   gap: 8px;
 }
 .navbar .buscador-izquierda form input {
-  max-width: 150px;
+  max-width: 220px;
+  font-size: 16px;
 }
 .navbar .logo-centro {
   position: absolute;
-  left: 50%;
+  left: 10%;
   transform: translateX(-50%);
 }
 .navbar .logo-centro a {
@@ -97,7 +99,7 @@ h2 p {
   gap: 8px;
 }
 .navbar .logo-centro a img {
-  width: 100px;
+  width: 120px;
   height: auto;
 }
 .navbar.navbar-expand-lg .container-fluid {
@@ -133,7 +135,7 @@ h2 p {
 }
 
 .boton, .boton-principal {
-  background-color: #af6d04;
+  background-color: #DAD4EC;
   color: #444444;
   font-family: "Lato", sans-serif;
   cursor: pointer;
@@ -291,9 +293,10 @@ p {
 }
 
 .buscador {
-  background-color: #af6d04;
+  background-color: #DAD4EC;
   color: #444444;
   font-family: "Lato", sans-serif;
+  font-size: 18px;
   cursor: pointer;
 }
 .buscador:hover {

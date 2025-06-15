@@ -36,7 +36,8 @@ h1 {
 h2 {
   color: #A3B18A;
   font-size: 40px;
-  font-family: $font-subtitulo;
+  font-family: $font-titulo;
+  font-weight:bolder; 
   text-align: center;
   @include margin(20, 20, 20, 20);
   padding: 15px;
@@ -72,22 +73,25 @@ h2 {
     align-items: center;
   }
 
-  .buscador-izquierda {
-    flex: 0 0 auto;
+.buscador-izquierda {
+  margin-left: auto; // Lo empuja al final del contenedor (a la derecha)
+  
+  form {
+    display: flex;
+    gap: 8px;
 
-    form {
-      display: flex;
-      gap: 8px;
-
-      input {
-        max-width: 150px;
-      }
+    input {
+      max-width: 220px;
+      font-size: 16px ;
     }
   }
+}
+
+
 
   .logo-centro {
     position: absolute;
-    left: 50%;
+    left: 10%;
     transform: translateX(-50%);
 
     a {
@@ -99,7 +103,7 @@ h2 {
       gap: 8px;
 
       img {
-        width: 100px;
+        width: 120px;
         height: auto;
       }
     }
@@ -148,7 +152,7 @@ h2 {
 }
 
 .boton {
-  background-color:#af6d04 ;
+  background-color:#DAD4EC;
   color:#444444;
    font-family: $font-general;
   cursor: pointer;
@@ -317,9 +321,10 @@ p {
 }
 
 .buscador {
-  background-color:#af6d04;
+  background-color:#DAD4EC;
   color: #444444;
   font-family: $font-general;
+  font-size: 18px;
   cursor: pointer;
 
   &:hover {
