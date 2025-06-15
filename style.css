@@ -27,7 +27,7 @@ h1 p {
 }
 
 h2 {
-  color: #A3B18A;
+  color: rgba(140, 155, 115, 0.6745098039);
   font-size: 40px;
   font-family: "Poiret One", cursive;
   font-weight: bolder;
@@ -137,82 +137,51 @@ h2 p {
   text-decoration: underline;
 }
 
-/* Responsive móvil */
 @media (max-width: 576px) {
-  /* Primer nav: logo y buscador en una línea */
   nav.bg-body-tertiary > .container-fluid {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 10px;
     flex-wrap: nowrap;
   }
   .logo-izquierda {
-    flex-shrink: 0;
+    flex: 0 0 auto;
   }
   .logo-izquierda .logo-img {
-    width: 100px;
-    padding: 0;
+    width: 90px;
+    height: auto;
   }
-  .buscador-derecha {
-    flex-grow: 1;
-    margin-left: 10px;
+  .form-buscador {
+    flex: 1 1 auto;
+    max-width: 200px;
   }
-  .buscador-derecha form {
+  .form-buscador form {
     width: 100%;
   }
-  .buscador-derecha form input {
-    max-width: 100%;
-    font-size: 16px;
-  }
-  /* Segundo nav: botón hamburguesa a la derecha, menú abajo centrado */
-  nav.navbar-expand-lg > .container-fluid {
-    display: flex;
-    justify-content: flex-end; /* botón a la derecha */
-    align-items: center;
+  .form-buscador form input {
+    width: 100%;
+    font-size: 14px;
   }
   .navbar-toggler {
-    margin-left: auto; /* empuja toggle a la derecha */
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+  nav.navbar-expand-lg > .container-fluid {
+    justify-content: center;
+    align-items: center;
   }
   .collapse.navbar-collapse {
     width: 100%;
-    order: 2; /* menú colapsado queda abajo */
+    order: 2;
   }
   .navbar-nav {
-    justify-content: center; /* menú centrado */
-  }
-}
-@media (max-width: 576px) {
-  nav.bg-body-tertiary > .container-fluid {
-    display: flex;
-    flex-direction: row; /* Asegura que queden en una fila */
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap; /* Evita que se apilen */
-  }
-  .logo-izquierda {
-    flex-shrink: 0;
-  }
-  .logo-izquierda .logo-img {
-    width: 100px;
-    padding: 0;
-  }
-  .buscador-derecha {
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-end; /* Empuja el buscador a la derecha */
-    margin-left: 10px;
-  }
-  .buscador-derecha form {
-    width: 100%;
-    max-width: 200px;
-  }
-  .buscador-derecha form input {
-    max-width: 100%;
-    font-size: 15px;
+    justify-content: center;
   }
 }
 .boton, .boton-principal {
-  background-color: rgba(204, 197, 223, 0.9019607843);
+  background-color: rgba(234, 206, 162, 0.9411764706);
   color: #444444;
   font-family: "Lato", sans-serif;
   font-weight: normal;
@@ -236,7 +205,7 @@ h2 p {
   text-align: center;
 }
 .boton-principal:hover {
-  background-color: rgba(195, 180, 238, 0.6470588235);
+  background-color: rgba(238, 199, 137, 0.7764705882);
   transform: scale(1.1);
   color: #444444;
 }
@@ -255,7 +224,7 @@ h2 p {
   flex-direction: column;
   height: 100%;
   padding: 1.5rem;
-  background-color: rgba(198, 210, 185, 0.9098039216);
+  background-color: #F5F0EB;
   color: #C6D2B9;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -405,7 +374,7 @@ form.d-flex input {
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  background-color: rgba(204, 197, 223, 0.9019607843);
+  background-color: rgba(234, 206, 162, 0.9411764706);
   border-radius: 50%;
   padding: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -420,7 +389,41 @@ form.d-flex input {
 }
 .btn-whatsapp:hover {
   transform: scale(1.1);
-  background-color: rgba(195, 180, 238, 0.6470588235);
+  background-color: rgba(238, 199, 137, 0.7764705882);
+}
+
+.form-buscador {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+}
+.form-buscador .input-wrapper {
+  position: relative;
+}
+.form-buscador .input-wrapper input {
+  width: 100%;
+  padding-right: 2rem;
+  background-color: rgba(234, 206, 162, 0.9411764706);
+  color: #444;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+.form-buscador .input-wrapper input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(163, 177, 138, 0.3);
+}
+.form-buscador .input-wrapper .lupa-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #444;
+  font-size: 18px;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=style.css.map */

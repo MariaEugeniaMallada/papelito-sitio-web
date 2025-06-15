@@ -32,7 +32,7 @@ h1 {
 }
 
 h2 {
-  color: #A3B18A;
+  color: #8c9b73ac;
   font-size: 40px;
   font-family: $font-titulo;
   font-weight:bolder; 
@@ -90,8 +90,8 @@ h2 {
       }
     }
     &:hover {
-    transform: scale(1.3);    
-  }
+      transform: scale(1.3);    
+    }
   }
 
   .buscador-derecha {
@@ -149,98 +149,62 @@ h2 {
   }
 }
 
-/* Responsive móvil */
 @media (max-width: 576px) {
-  /* Primer nav: logo y buscador en una línea */
   nav.bg-body-tertiary > .container-fluid {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 10px;
     flex-wrap: nowrap;
   }
 
   .logo-izquierda {
-    flex-shrink: 0;
+    flex: 0 0 auto;
 
     .logo-img {
-      width: 100px;
-      padding: 0;
+      width: 90px;
+      height: auto;
     }
   }
 
-  .buscador-derecha {
-    flex-grow: 1;
-    margin-left: 10px;
+  .form-buscador {
+    flex: 1 1 auto;
+    max-width: 200px;
 
     form {
       width: 100%;
 
       input {
-        max-width: 100%;
-        font-size: 16px;
+        width: 100%;
+        font-size: 14px;
       }
     }
   }
 
-  /* Segundo nav: botón hamburguesa a la derecha, menú abajo centrado */
-  nav.navbar-expand-lg > .container-fluid {
-    display: flex;
-    justify-content: flex-end; /* botón a la derecha */
-    align-items: center;
+  .navbar-toggler {
+    flex: 0 0 auto;
+    margin-left: auto;
   }
 
-  .navbar-toggler {
-    margin-left: auto; /* empuja toggle a la derecha */
+  nav.navbar-expand-lg > .container-fluid {
+    justify-content: center;
+    align-items: center;
   }
 
   .collapse.navbar-collapse {
     width: 100%;
-    order: 2; /* menú colapsado queda abajo */
+    order: 2;
   }
 
   .navbar-nav {
-    justify-content: center; /* menú centrado */
-  }
-}
-@media (max-width: 576px) {
-  nav.bg-body-tertiary > .container-fluid {
-    display: flex;
-    flex-direction: row; /* Asegura que queden en una fila */
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap; /* Evita que se apilen */
-  }
-
-  .logo-izquierda {
-    flex-shrink: 0;
-
-    .logo-img {
-      width: 100px;
-      padding: 0;
-    }
-  }
-
-  .buscador-derecha {
-    flex-grow: 1;
-    display: flex;
-    justify-content: flex-end; /* Empuja el buscador a la derecha */
-    margin-left: 10px;
-
-    form {
-      width: 100%;
-      max-width: 200px;
-
-      input {
-        max-width: 100%;
-        font-size: 15px;
-      }
-    }
+    justify-content: center;
   }
 }
 
 
 .boton {
-  background-color:#ccc5dfe6;
+  background-color:#eacea2f0;
   color:#444444;
   font-family: $font-general;
   font-weight: normal;
@@ -265,7 +229,7 @@ h2 {
   text-align: center;
 
   &:hover {
-    background-color:#c3b4eea5;
+    background-color:#eec789c6;
     transform: scale(1.1);
     color:#444444;
   }
@@ -285,7 +249,7 @@ h2 {
   flex-direction: column;
   height: 100%;
   padding: 1.5rem;
-  background-color:#c6d2b9e8;
+  background-color:#F5F0EB;
   color: #C6D2B9;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -415,7 +379,6 @@ p {
 
   &:hover {
     transform: scale(1.1);
-   
   }
 }
 
@@ -438,13 +401,12 @@ form.d-flex {
   }
 }
 
-
 .btn-whatsapp {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  background-color:#ccc5dfe6;
+  background-color:#eacea2f0;
   border-radius: 50%;
   padding: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -460,7 +422,45 @@ form.d-flex {
 
   &:hover {
     transform: scale(1.1);
-    background-color:#c3b4eea5;
+    background-color:#eec789c6;
+  }
+}
+
+.form-buscador {
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+
+  .input-wrapper {
+    position: relative;
+
+    input {
+      width: 100%;
+      padding-right: 2rem; // Espacio para la lupa
+      background-color:#eacea2f0;
+      color: #444;
+      font-family: $font-general;
+      font-size: 14px;
+      font-weight: normal;
+      border: none;
+      border-radius: 4px;
+      padding: 6px 12px;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px rgba(163, 177, 138, 0.3); // suave resaltado opcional
+      }
+    }
+
+    .lupa-icon {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #444;
+      font-size: 18px;
+      pointer-events: none;
+    }
   }
 }
 

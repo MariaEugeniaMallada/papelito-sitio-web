@@ -13,41 +13,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poiret+One&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <title>Produtos Papelito</title>
-  <link rel="shortcut icon" href="../imagenes/logo en negro.png" type="gatito de origami" />
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <title>Papelito</title>
+  <link rel="shortcut icon" href="./imagenes/logo en negro.png" type="gatito de origami">
 </head>
 
 <body>
- <header>
-  <!-- Primer nav: logo y buscador -->
-  <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <!-- Logo izquierda -->
-      <div class="logo-izquierda">
-        <a class="navbar-brand" href="#">
-          <img src="../imagenes/logo2.png" alt="Logo" class="logo-img">
-        </a>
+  <header>
+    <!-- Primer nav: logo y buscador -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Logo a la izquierda -->
+        <div class="logo-izquierda">
+          <a class="navbar-brand" href="#">
+            <img src="../imagenes/logo2.png" alt="Logo" class="logo-img">
+          </a>
+        </div>
+
+        <!-- Buscador al centro en móviles -->
+        <div class="form-buscador">
+          <form class="d-flex" role="search">
+            <div class="input-wrapper">
+              <input class="form-control" type="search" placeholder="¿Qué estás buscando?" aria-label="Buscar">
+              <span class="lupa-icon"><i class="bi bi-search"></i></span>
+            </div>
+          </form>
+        </div>
+
+
       </div>
+    </nav>
 
-      <!-- Buscador derecha -->
-      <div class="buscador-derecha">
-        <form class="d-flex" role="search">
-          <input class="form-control" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
-        </form>
-      </div>
-    </div>
-  </nav>
+    <!-- Segundo nav: menú hamburguesa y links -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-  <!-- Segundo nav: menú hamburguesa y links -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
           <li class="nav-item"><a class="nav-link" href="./talleres.html">Talleres</a></li>
