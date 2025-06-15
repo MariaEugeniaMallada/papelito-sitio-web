@@ -1,5 +1,3 @@
-
-
 $font-titulo: 'Poiret One', cursive;
 $font-subtitulo: 'Raleway', sans-serif;
 $font-general: 'Lato', sans-serif;
@@ -67,94 +65,180 @@ h2 {
   padding: 10px 20px;
 
   .container-fluid {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap; /* Para mantener logo y buscador en línea por defecto */
   }
 
-.buscador-izquierda {
-  margin-left: auto; // Lo empuja al final del contenedor (a la derecha)
-  
-  form {
+  /* Estilos generales */
+  .logo-izquierda {
     display: flex;
-    gap: 8px;
-
-    input {
-      max-width: 220px;
-      font-size: 16px ;
-    }
-  }
-}
-
-
-
-  .logo-centro {
-    position: absolute;
-    left: 10%;
-    transform: translateX(-50%);
+    align-items: center;
+    margin-right: auto;
 
     a {
       display: flex;
       align-items: center;
-      color: #af6d04;
-      text-decoration: none;
-      font-size: 18px;
-      gap: 8px;
+      padding: 5px;
 
-      img {
+      .logo-img {
         width: 120px;
         height: auto;
+        max-width: 100%;
       }
     }
   }
 
-  /* Segundo navbar - menú de navegación */
-  &.navbar-expand-lg {
-    .container-fluid {
-      padding: 0;
-    }
+  .buscador-derecha {
+    margin-left: auto;
 
-    .navbar-nav {
+    form {
       display: flex;
-      justify-content: center;
-      gap: 40px;
-      width: 100%;
-      padding-left: 0;
-      margin: 10px 0;
-      list-style: none;
+      gap: 8px;
 
-      .nav-item .nav-link {
-        color: #af6d04;
-        font-family: $font-subtitulo;
+      input {
+        max-width: 200px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+/* Segundo nav: fuera de .navbar */
+.navbar-expand-lg {
+  .container-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+
+  .navbar-nav {
+    display: flex !important;      /* Forzar display flex para que gap funcione */
+    gap: 60px !important;          /* Espacio entre los <li> */
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    .nav-item {
+      margin: 0;
+      padding: 0;
+
+      > .nav-link {
+        color: #af6d04 !important;    /* Forzar color */
+        font-family: 'Raleway', sans-serif;
         text-decoration: none;
         font-size: 18px;
 
-        &:hover {
+        &:hover,
+        &:focus {
+          color: darken(#af6d04, 15%) !important;
           text-decoration: underline;
         }
       }
     }
-
-    .navbar-toggler {
-      border: none;
-      outline: none;
-    }
-  }
-
-  .form-control {
-    max-width: 150px;
-  }
-
-  .btn.buscador {
-    padding: 0.4rem 0.8rem;
   }
 }
 
+/* Responsive móvil */
+@media (max-width: 576px) {
+  /* Primer nav: logo y buscador en una línea */
+  nav.bg-body-tertiary > .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .logo-izquierda {
+    flex-shrink: 0;
+
+    .logo-img {
+      width: 100px;
+      padding: 0;
+    }
+  }
+
+  .buscador-derecha {
+    flex-grow: 1;
+    margin-left: 10px;
+
+    form {
+      width: 100%;
+
+      input {
+        max-width: 100%;
+        font-size: 16px;
+      }
+    }
+  }
+
+  /* Segundo nav: botón hamburguesa a la derecha, menú abajo centrado */
+  nav.navbar-expand-lg > .container-fluid {
+    display: flex;
+    justify-content: flex-end; /* botón a la derecha */
+    align-items: center;
+  }
+
+  .navbar-toggler {
+    margin-left: auto; /* empuja toggle a la derecha */
+  }
+
+  .collapse.navbar-collapse {
+    width: 100%;
+    order: 2; /* menú colapsado queda abajo */
+  }
+
+  .navbar-nav {
+    justify-content: center; /* menú centrado */
+  }
+}
+@media (max-width: 576px) {
+  nav.bg-body-tertiary > .container-fluid {
+    display: flex;
+    flex-direction: row; /* Asegura que queden en una fila */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* Evita que se apilen */
+  }
+
+  .logo-izquierda {
+    flex-shrink: 0;
+
+    .logo-img {
+      width: 100px;
+      padding: 0;
+    }
+  }
+
+  .buscador-derecha {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end; /* Empuja el buscador a la derecha */
+    margin-left: 10px;
+
+    form {
+      width: 100%;
+      max-width: 220px;
+
+      input {
+        max-width: 100%;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
 .boton {
-  background-color:#DAD4EC;
+  background-color:#ccc5dfe6;
   color:#444444;
-   font-family: $font-general;
+  font-family: $font-general;
   cursor: pointer;
   margin-top: auto;
   padding: 0.6rem 1.2rem;  
@@ -182,11 +266,9 @@ h2 {
   }
 }
 
-
-
 .t {
   color:#444444;
-   font-family: $font-subtitulo
+  font-family: $font-subtitulo;
 }
 
 .bg-body-tertiary {
@@ -198,7 +280,7 @@ h2 {
   flex-direction: column;
   height: 100%;
   padding: 1.5rem;
-  background-color:#C6D2B9;
+  background-color:#c6d2b9e8;
   color: #C6D2B9;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -227,10 +309,9 @@ h2 {
   flex: 1;
   font-size: 1rem;
   color:#444444;
- font-family: $font-general;
+  font-family: $font-general;
   margin-bottom: 1rem;
 }
-
 
 footer {
   color: #F5F0EB;
@@ -273,7 +354,6 @@ p {
   margin-bottom: 1rem;
   font-family: $font-general;
 }
-
 
 .img {
   height: 300px;
@@ -321,7 +401,7 @@ p {
 }
 
 .buscador {
-  background-color:#DAD4EC;
+  background-color:#dad4ece6;
   color: #444444;
   font-family: $font-general;
   font-size: 18px;
@@ -351,7 +431,6 @@ form.d-flex {
     min-width: 0;
   }
 }
-
 
 
 

@@ -66,76 +66,149 @@ h2 p {
   background-color: #f5f0eb;
   font-family: "Raleway", sans-serif;
   padding: 10px 20px;
-  /* Segundo navbar - menú de navegación */
+  /* Estilos generales */
 }
 .navbar .container-fluid {
-  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: nowrap; /* Para mantener logo y buscador en línea por defecto */
 }
-.navbar .buscador-izquierda {
-  margin-left: auto;
-}
-.navbar .buscador-izquierda form {
-  display: flex;
-  gap: 8px;
-}
-.navbar .buscador-izquierda form input {
-  max-width: 220px;
-  font-size: 16px;
-}
-.navbar .logo-centro {
-  position: absolute;
-  left: 10%;
-  transform: translateX(-50%);
-}
-.navbar .logo-centro a {
+.navbar .logo-izquierda {
   display: flex;
   align-items: center;
-  color: #af6d04;
-  text-decoration: none;
-  font-size: 18px;
-  gap: 8px;
+  margin-right: auto;
 }
-.navbar .logo-centro a img {
+.navbar .logo-izquierda a {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.navbar .logo-izquierda a .logo-img {
   width: 120px;
   height: auto;
+  max-width: 100%;
 }
-.navbar.navbar-expand-lg .container-fluid {
-  padding: 0;
+.navbar .buscador-derecha {
+  margin-left: auto;
 }
-.navbar.navbar-expand-lg .navbar-nav {
+.navbar .buscador-derecha form {
+  display: flex;
+  gap: 8px;
+}
+.navbar .buscador-derecha form input {
+  max-width: 200px;
+  font-size: 14px;
+}
+
+/* Segundo nav: fuera de .navbar */
+.navbar-expand-lg .container-fluid {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  width: 100%;
-  padding-left: 0;
-  margin: 10px 0;
-  list-style: none;
+  align-items: center;
 }
-.navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link {
-  color: #af6d04;
+.navbar-expand-lg .navbar-toggler {
+  border: none;
+  outline: none;
+}
+.navbar-expand-lg .navbar-nav {
+  display: flex !important; /* Forzar display flex para que gap funcione */
+  gap: 60px !important; /* Espacio entre los <li> */
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-item {
+  margin: 0;
+  padding: 0;
+}
+.navbar-expand-lg .navbar-nav .nav-item > .nav-link {
+  color: #af6d04 !important; /* Forzar color */
   font-family: "Raleway", sans-serif;
   text-decoration: none;
   font-size: 18px;
 }
-.navbar.navbar-expand-lg .navbar-nav .nav-item .nav-link:hover {
+.navbar-expand-lg .navbar-nav .nav-item > .nav-link:hover, .navbar-expand-lg .navbar-nav .nav-item > .nav-link:focus {
+  color: rgb(100.2094972067, 62.4162011173, 2.2905027933) !important;
   text-decoration: underline;
 }
-.navbar.navbar-expand-lg .navbar-toggler {
-  border: none;
-  outline: none;
-}
-.navbar .form-control {
-  max-width: 150px;
-}
-.navbar .btn.buscador {
-  padding: 0.4rem 0.8rem;
-}
 
+/* Responsive móvil */
+@media (max-width: 576px) {
+  /* Primer nav: logo y buscador en una línea */
+  nav.bg-body-tertiary > .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .logo-izquierda {
+    flex-shrink: 0;
+  }
+  .logo-izquierda .logo-img {
+    width: 100px;
+    padding: 0;
+  }
+  .buscador-derecha {
+    flex-grow: 1;
+    margin-left: 10px;
+  }
+  .buscador-derecha form {
+    width: 100%;
+  }
+  .buscador-derecha form input {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  /* Segundo nav: botón hamburguesa a la derecha, menú abajo centrado */
+  nav.navbar-expand-lg > .container-fluid {
+    display: flex;
+    justify-content: flex-end; /* botón a la derecha */
+    align-items: center;
+  }
+  .navbar-toggler {
+    margin-left: auto; /* empuja toggle a la derecha */
+  }
+  .collapse.navbar-collapse {
+    width: 100%;
+    order: 2; /* menú colapsado queda abajo */
+  }
+  .navbar-nav {
+    justify-content: center; /* menú centrado */
+  }
+}
+@media (max-width: 576px) {
+  nav.bg-body-tertiary > .container-fluid {
+    display: flex;
+    flex-direction: row; /* Asegura que queden en una fila */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* Evita que se apilen */
+  }
+  .logo-izquierda {
+    flex-shrink: 0;
+  }
+  .logo-izquierda .logo-img {
+    width: 100px;
+    padding: 0;
+  }
+  .buscador-derecha {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end; /* Empuja el buscador a la derecha */
+    margin-left: 10px;
+  }
+  .buscador-derecha form {
+    width: 100%;
+    max-width: 220px;
+  }
+  .buscador-derecha form input {
+    max-width: 100%;
+    font-size: 14px;
+  }
+}
 .boton, .boton-principal {
-  background-color: #DAD4EC;
+  background-color: rgba(204, 197, 223, 0.9019607843);
   color: #444444;
   font-family: "Lato", sans-serif;
   cursor: pointer;
@@ -177,7 +250,7 @@ h2 p {
   flex-direction: column;
   height: 100%;
   padding: 1.5rem;
-  background-color: #C6D2B9;
+  background-color: rgba(198, 210, 185, 0.9098039216);
   color: #C6D2B9;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -293,7 +366,7 @@ p {
 }
 
 .buscador {
-  background-color: #DAD4EC;
+  background-color: rgba(218, 212, 236, 0.9019607843);
   color: #444444;
   font-family: "Lato", sans-serif;
   font-size: 18px;

@@ -10,7 +10,8 @@
     content="origami, papelito, kits de origami, productos artesanales, arte en papel, talleres de origami, regalos creativos, creatividad, plegado de papel, Quito, Ambato, diseño en papel, arte hecho a mano">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poiret+One&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poiret+One&family=Raleway:wght@400;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Papelito</title>
@@ -18,31 +19,27 @@
 </head>
 
 <body>
-  <header>
+ <header>
+  <!-- Primer nav: logo y buscador -->
   <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid d-flex justify-content-between align-items-center position-relative">
-
-      <!-- Buscador alineado a la izquierda -->
-     <div class="buscador-izquierda">
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="¿Que Estas Buscando?" aria-label="Search">
-        </form>
-      </div>
-
-      <!-- Logo centrado -->
-      <div class="logo-centro">
-        <a class="navbar-brand" href="#">
-          <img src="./imagenes/logo2.png" alt="Logo" width="40" height="auto" class="d-inline-block align-text-top">
-        </a>
-      </div>
-
-      <!-- Div vacío para balance visual -->
-      <div style="width: 230px;"></div>
-
+  <div class="container-fluid">
+    <!-- Logo a la izquierda -->
+    <div class="logo-izquierda">
+      <a class="navbar-brand" href="#">
+        <img src="./imagenes/logo2.png" alt="Logo" class="logo-img">
+      </a>
     </div>
-  </nav>
 
-  <!-- Segundo navbar: Menú de navegación -->
+    <!-- Buscador a la derecha -->
+    <div class="buscador-derecha">
+      <form class="d-flex" role="search">
+        <input class="form-control" type="search" placeholder="¿Qué estás buscando?" aria-label="Search">
+      </form>
+    </div>
+  </div>
+</nav>
+
+  <!-- Segundo nav: menú hamburguesa y links -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -50,24 +47,13 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Este div se colapsa en móviles -->
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="./index.html">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./paginas/productos.html">Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./paginas/talleres.html">Talleres</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./paginas/eventos.html">Eventos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./paginas/contactos.html">Contáctanos</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="./index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="./paginas/productos.html">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="./paginas/talleres.html">Talleres</a></li>
+          <li class="nav-item"><a class="nav-link" href="./paginas/eventos.html">Eventos</a></li>
+          <li class="nav-item"><a class="nav-link" href="./paginas/contactos.html">Contáctanos</a></li>
         </ul>
       </div>
     </div>
@@ -145,7 +131,7 @@
                 --bs-btn-padding-x: 0.5rem;
                 --bs-btn-font-size: 0.75rem;
               ">
-            Más info.
+              Más info.
             </button>
           </div>
         </div>
