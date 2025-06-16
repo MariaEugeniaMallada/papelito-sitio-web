@@ -276,6 +276,7 @@ h5 {
   color: #444;
   font-size: 15px;
   text-decoration: none;
+  font-family: "Lato", sans-serif;
 }
 .footer .footer-link:hover {
   text-decoration: underline;
@@ -340,11 +341,15 @@ h5 {
 .icono-red {
   color: rgba(140, 155, 115, 0.6745098039);
   font-size: 22px;
-  margin-right: 12px;
+  transition: transform 0.3s ease;
 }
 .icono-red:hover {
   transform: scale(1.1);
   color: rgba(114.0625, 127.75, 91.25, 0.6745098039);
+}
+
+.redes-sociales-posicion {
+  margin-top: -20px;
 }
 
 .img {

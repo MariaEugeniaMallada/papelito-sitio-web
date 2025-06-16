@@ -300,6 +300,8 @@ h2 {
     color: #444;
     font-size: 15px;
     text-decoration: none;
+    font-family: $font-general;
+
 
     &:hover {
       text-decoration: underline;
@@ -378,13 +380,18 @@ h2 {
 .icono-red {
     color: #8c9b73ac;
     font-size: 22px;
-    margin-right: 12px;
+    transition: transform 0.3s ease;
 
     &:hover {
       transform: scale(1.1);
       color: darken(#8c9b73ac, 10%);
     }
   }
+.redes-sociales-posicion {
+  margin-top: -20px; // Ajustá el valor a tu gusto
+}
+
+
 
 .img {
   height: 300px;
