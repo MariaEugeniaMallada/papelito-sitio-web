@@ -371,8 +371,16 @@ h2 {
   }
 }
 
+.icono-red {
+    color: #8c9b73ac;
+    font-size: 22px;
+    margin-right: 12px;
 
-
+    &:hover {
+      transform: scale(1.1);
+      color: darken(#8c9b73ac, 10%);
+    }
+  }
 
 .img {
   height: 300px;

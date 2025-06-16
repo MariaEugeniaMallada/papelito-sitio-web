@@ -331,6 +331,16 @@ h2 p {
   color: #888;
 }
 
+.icono-red {
+  color: rgba(140, 155, 115, 0.6745098039);
+  font-size: 22px;
+  margin-right: 12px;
+}
+.icono-red:hover {
+  transform: scale(1.1);
+  color: rgba(114.0625, 127.75, 91.25, 0.6745098039);
+}
+
 .img {
   height: 300px;
   width: 100%;
