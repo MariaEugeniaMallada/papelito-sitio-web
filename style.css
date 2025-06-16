@@ -50,6 +50,12 @@ h2 p {
   padding: 10px;
 }
 
+h5 {
+  font-family: "Raleway", sans-serif;
+  color: #7e4f16;
+  margin-bottom: 15px;
+}
+
 .textoevento {
   color: #444444;
   font-size: 16px;
