@@ -282,47 +282,97 @@ h2 {
   margin-bottom: 1rem;
 }
 
-footer {
-  color: #F5F0EB;
-  @extend .bg-body-tertiary;
+.footer {
+  background-color: #f5f0eb;
+  font-family: $font-general;
 
-  a {
-    font-size: 12px;
-    font-family: $font-general;
+  h5 {
+    font-family: $font-subtitulo;
+    color: #7e4f16;
+    margin-bottom: 15px;
   }
-}
 
-.footer-contacto {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
-  padding: 30px;
-
-  a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .footer-link {
+    color: #444;
+    font-size: 15px;
     text-decoration: none;
-    color:#7e4f16;
-    font-family: $font-general;
-    font-size: 14px;
-    width: 80px;
 
-    img {
-      width: 40px;
-      height: auto;
-      margin-bottom: 5px;
+    &:hover {
+      text-decoration: underline;
     }
   }
+
+  .accordion {
+    margin-left: 0;
+    padding-left: 0.5rem;
+  }
+
+  .accordion-item {
+    background-color: #f5f0eb;
+    border: none;
+    margin-bottom: 1px;
+  }
+
+  .accordion-button {
+    background-color: #f5f0eb;
+    color: #444;
+    font-family: $font-general;
+    padding: 0.1rem 1.8rem 0.3rem 0.1rem;
+    font-size: 14px;
+    box-shadow: none;
+    border: none;
+
+    &::after {
+      margin-left: auto;
+      margin-right: 0.5rem; // <- flechita más a la izquierda
+    }
+
+    &:not(.collapsed) {
+      color: #444;
+      background-color: #f5f0eb;
+      box-shadow: none;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .accordion-body {
+    background-color: #f5f0eb;
+    color: #555;
+    padding: 0.1rem 0.5em;
+    font-size: 13.5px;
+  }
+
+  .bi {
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+      color: #7e4f16;
+    }
+  }
+
+  .icono-red {
+    color: #8c9b73ac;
+    font-size: 22px;
+    margin-right: 12px;
+
+    &:hover {
+      transform: scale(1.2);
+      color: darken(#8c9b73ac, 10%);
+    }
+  }
+
+  p.small {
+    font-size: 12px;
+    color: #888;
+  }
 }
 
-p {
-  font-weight: 400;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  font-family: $font-general;
-}
+
+
 
 .img {
   height: 300px;

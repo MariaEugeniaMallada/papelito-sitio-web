@@ -215,7 +215,7 @@ h2 p {
   font-family: "Raleway", sans-serif;
 }
 
-.bg-body-tertiary, footer {
+.bg-body-tertiary {
   background-color: #F5F0EB !important;
 }
 
@@ -257,42 +257,78 @@ h2 p {
   margin-bottom: 1rem;
 }
 
-footer {
-  color: #F5F0EB;
-}
-footer a {
-  font-size: 12px;
+.footer {
+  background-color: #f5f0eb;
   font-family: "Lato", sans-serif;
 }
-
-.footer-contacto {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
-  padding: 30px;
-}
-.footer-contacto a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
+.footer h5 {
+  font-family: "Raleway", sans-serif;
   color: #7e4f16;
+  margin-bottom: 15px;
+}
+.footer .footer-link {
+  color: #444;
+  font-size: 15px;
+  text-decoration: none;
+}
+.footer .footer-link:hover {
+  text-decoration: underline;
+}
+.footer .accordion {
+  margin-left: 0;
+  padding-left: 0.5rem;
+}
+.footer .accordion-item {
+  background-color: #f5f0eb;
+  border: none;
+  margin-bottom: 1px;
+}
+.footer .accordion-button {
+  background-color: #f5f0eb;
+  color: #444;
   font-family: "Lato", sans-serif;
+  padding: 0.1rem 1.8rem 0.3rem 0.1rem;
   font-size: 14px;
-  width: 80px;
+  box-shadow: none;
+  border: none;
 }
-.footer-contacto a img {
-  width: 40px;
-  height: auto;
-  margin-bottom: 5px;
+.footer .accordion-button::after {
+  margin-left: auto;
+  margin-right: 0.5rem;
 }
-
-p {
-  font-weight: 400;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  font-family: "Lato", sans-serif;
+.footer .accordion-button:not(.collapsed) {
+  color: #444;
+  background-color: #f5f0eb;
+  box-shadow: none;
+}
+.footer .accordion-button:focus {
+  box-shadow: none;
+}
+.footer .accordion-body {
+  background-color: #f5f0eb;
+  color: #555;
+  padding: 0.1rem 0.5em;
+  font-size: 13.5px;
+}
+.footer .bi {
+  transition: transform 0.3s ease;
+}
+.footer .bi:hover {
+  transform: scale(1.2);
+  color: #7e4f16;
+}
+.footer .icono-red {
+  color: rgba(140, 155, 115, 0.6745098039);
+  font-size: 22px;
+  margin-right: 12px;
+}
+.footer .icono-red:hover {
+  transform: scale(1.2);
+  color: rgba(114.0625, 127.75, 91.25, 0.6745098039);
+}
+.footer p.small {
+  font-size: 12px;
+  color: #888;
 }
 
 .img {
