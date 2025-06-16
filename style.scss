@@ -204,7 +204,7 @@ h2 {
 
 
 .boton {
-  background-color:#eacea2f0;
+  background-color:#C6D2B9;
   color:#444444;
   font-family: $font-general;
   font-weight: normal;
@@ -229,7 +229,7 @@ h2 {
   text-align: center;
 
   &:hover {
-    background-color:#eec789c6;
+    background-color:#bedd9d7a;
     transform: scale(1.1);
     color:#444444;
   }
@@ -370,7 +370,7 @@ p {
 }
 
 .buscador {
-  background-color:#dad4ece6;
+  background-color:#C6D2B9;
   color: #444444;
   font-family: $font-general;
   font-size: 18px;
@@ -406,7 +406,7 @@ form.d-flex {
   bottom: 20px;
   right: 20px;
   z-index: 1000;
-  background-color:#eacea2f0;
+  background-color:#C6D2B9;
   border-radius: 50%;
   padding: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -422,7 +422,7 @@ form.d-flex {
 
   &:hover {
     transform: scale(1.1);
-    background-color:#eec789c6;
+    background-color:#bedd9d7a;
   }
 }
 
@@ -436,19 +436,19 @@ form.d-flex {
 
     input {
       width: 100%;
-      padding-right: 2rem; // Espacio para la lupa
-      background-color:#eacea2f0;
+      background-color: #C6D2B9;
       color: #444;
       font-family: $font-general;
       font-size: 14px;
       font-weight: normal;
       border: none;
       border-radius: 4px;
-      padding: 6px 12px;
+      padding: 6px 36px 6px 12px; // Espacio suficiente para lupa y ❌
+      box-sizing: border-box;
 
       &:focus {
         outline: none;
-        box-shadow: 0 0 0 2px rgba(163, 177, 138, 0.3); // suave resaltado opcional
+        box-shadow: 0 0 0 2px rgba(163, 177, 138, 0.3);
       }
     }
 
@@ -460,9 +460,11 @@ form.d-flex {
       color: #444;
       font-size: 18px;
       pointer-events: none;
+      z-index: 1;
     }
   }
 }
+
 
 
 
