@@ -348,11 +348,11 @@ h2 {
     padding-bottom: 0.5rem;
   } 
   .card-title {
-    font-size: 0.90rem;
+    font-size: 1rem;
      } 
 
 .card-text {
-  font-size: 0.80rem;
+  font-size: 0.90rem;
   display: -webkit-box;
   -webkit-line-clamp: 4; // menos líneas en móvil
   line-clamp: 4; // estándar para compatibilidad
@@ -365,7 +365,7 @@ h2 {
   .boton-principal {
     max-width: 100%;
     font-size: 0.70rem;  // ahora con unidad correcta
-    padding: 0.5rem 1rem; // achica un poco el padding también
+    padding: 0.3rem 0.80rem; // achica un poco el padding también
   }
 } 
 @media (max-width: 480px) {
