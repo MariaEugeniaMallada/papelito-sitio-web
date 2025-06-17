@@ -144,15 +144,16 @@ h5 {
 }
 
 @media (max-width: 576px) {
-  nav.bg-body-tertiary > .container-fluid {
-    display: flex;
+  /* El primer nav usa grid para logo, buscador y toggler */
+  nav.bg-body-tertiary:first-of-type > .container-fluid {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* logo | buscador | toggler */
     align-items: center;
-    justify-content: space-between;
     gap: 10px;
     padding: 0 10px;
-    flex-wrap: nowrap;
   }
   .logo-izquierda {
+    grid-column: 1;
     flex: 0 0 auto;
   }
   .logo-izquierda .logo-img {
@@ -160,30 +161,64 @@ h5 {
     height: auto;
   }
   .form-buscador {
-    flex: 1 1 auto;
-    max-width: 200px;
-  }
-  .form-buscador form {
-    width: 100%;
-  }
-  .form-buscador form input {
-    width: 100%;
-    font-size: 14px;
-  }
-  .navbar-toggler {
-    flex: 0 0 auto;
-    margin-left: auto;
-  }
-  nav.navbar-expand-lg > .container-fluid {
+    grid-column: 2;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
-  .collapse.navbar-collapse {
-    width: 100%;
-    order: 2;
+  .form-buscador .input-wrapper {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
   }
-  .navbar-nav {
+  .form-buscador .buscador-input {
+    width: 40px;
+    height: 40px;
+    padding-left: 30px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 0;
+    color: transparent;
+    caret-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  .form-buscador .buscador-input::placeholder {
+    color: transparent;
+  }
+  .form-buscador .buscador-input:focus {
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #444;
+    caret-color: auto;
+  }
+  .form-buscador .lupa-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #888;
+  }
+  /* Botón hamburguesa en grid columna 3 */
+  .navbar-toggler {
+    grid-column: 3;
+    flex: 0 0 auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* Segundo nav normal */
+  nav.bg-body-tertiary:last-of-type > .container-fluid {
+    display: flex;
     justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-toggler {
+    display: none !important;
   }
 }
 .boton, .boton-principal {

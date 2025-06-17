@@ -153,19 +153,20 @@ h2 {
   }
 }
 
+
 @media (max-width: 576px) {
-  nav.bg-body-tertiary > .container-fluid {
-    display: flex;
+  /* El primer nav usa grid para logo, buscador y toggler */
+  nav.bg-body-tertiary:first-of-type > .container-fluid {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* logo | buscador | toggler */
     align-items: center;
-    justify-content: space-between;
     gap: 10px;
     padding: 0 10px;
-    flex-wrap: nowrap;
   }
 
   .logo-izquierda {
+    grid-column: 1;
     flex: 0 0 auto;
-
     .logo-img {
       width: 90px;
       height: auto;
@@ -173,38 +174,76 @@ h2 {
   }
 
   .form-buscador {
-    flex: 1 1 auto;
-    max-width: 200px;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    form {
+    .input-wrapper {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto; // <-- Esto es lo que te falta
+}
+
+
+    .buscador-input {
+      width: 40px;
+      height: 40px;
+      padding-left: 30px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      font-size: 0;
+      color: transparent;
+      caret-color: transparent;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .buscador-input::placeholder {
+      color: transparent;
+    }
+
+    .buscador-input:focus {
       width: 100%;
+      border-radius: 5px;
+      font-size: 14px;
+      color: #444;
+      caret-color: auto;
+    }
 
-      input {
-        width: 100%;
-        font-size: 14px;
-      }
+    .lupa-icon {
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: #888;
     }
   }
 
+  /* Botón hamburguesa en grid columna 3 */
   .navbar-toggler {
+    grid-column: 3;
     flex: 0 0 auto;
-    margin-left: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 
-  nav.navbar-expand-lg > .container-fluid {
+  /* Segundo nav normal */
+  nav.bg-body-tertiary:last-of-type > .container-fluid {
+    display: flex;
     justify-content: center;
     align-items: center;
   }
-
-  .collapse.navbar-collapse {
-    width: 100%;
-    order: 2;
-  }
-
-  .navbar-nav {
-    justify-content: center;
+}
+ @media (min-width: 992px) {
+  .navbar-toggler {
+    display: none !important;
   }
 }
+
+
 
 
 .boton {
@@ -372,7 +411,7 @@ h2 {
   .card-title {
     font-size: 0.90rem; // achica un poco el texto
     line-height: 1.2;
-  }
+    }
   .card-text {
   font-size: 0.80rem;
   display: -webkit-box;
