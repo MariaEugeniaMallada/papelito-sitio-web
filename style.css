@@ -253,6 +253,9 @@ h5 {
   font-size: 1.25rem;
   margin-bottom: 10px;
   font-family: "Raleway", sans-serif;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 .card-text {
