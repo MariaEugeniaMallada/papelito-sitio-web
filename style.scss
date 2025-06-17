@@ -276,9 +276,12 @@ h2 {
   font-size: 1.25rem;
   margin-bottom: 10px;
   font-family: $font-subtitulo;
+
   display: -webkit-box;
-  -webkit-line-clamp: 2; // cantidad de líneas
+  -webkit-line-clamp: 2;
+  line-clamp: 2; // ✅ propiedad estándar agregada
   -webkit-box-orient: vertical;
+
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: normal;
@@ -297,8 +300,10 @@ h2 {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 5;
-  -webkit-box-orient: vertical; 
+  line-clamp: 5; // ✔️ estándar para compatibilidad
+  -webkit-box-orient: vertical; // ✔️ necesario para que clamp funcione
 }
+
 
 .boton {
   background-color: #C6D2B9;
@@ -346,10 +351,16 @@ h2 {
     font-size: 0.95rem;
      } 
 
-  .card-text {
-    -webkit-line-clamp: 4; // menos líneas en móvil
-    font-size: 0.85rem;
-  }
+.card-text {
+  font-size: 0.85rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; // menos líneas en móvil
+  line-clamp: 4; // estándar para compatibilidad
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 
   .boton-principal {
     max-width: 100%;
@@ -361,9 +372,20 @@ h2 {
     font-size: 0.85rem; // achica un poco el texto
     line-height: 1.2;
   }
+  .card-text {
+  font-size: 0.70rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; // menos líneas en móvil
+  line-clamp: 4; // estándar para compatibilidad
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-
+  .boton-principal {
+    font-size: 0.50;
+  }
+}
 
 
 .footer {
