@@ -261,8 +261,58 @@ h5 {
   color: #444444;
   font-family: "Lato", sans-serif;
   margin-bottom: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 
+.boton, .boton-principal {
+  background-color: #C6D2B9;
+  color: #444444;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: block;
+  max-width: 200px;
+  margin-top: auto;
+}
+
+.boton-principal {
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: center;
+}
+.boton-principal:hover {
+  background-color: rgba(190, 221, 157, 0.4784313725);
+  transform: scale(1.1);
+  color: #444444;
+}
+
+@media (max-width: 768px) {
+  .card {
+    min-height: unset;
+    max-height: unset;
+    overflow: visible;
+  }
+  .card-body {
+    padding-bottom: 0.5rem;
+  }
+  .card-text {
+    -webkit-line-clamp: 4;
+  }
+  .boton-principal {
+    max-width: 100%;
+  }
+}
 .footer {
   background-color: #f5f0eb;
   font-family: "Lato", sans-serif;
@@ -331,7 +381,7 @@ h5 {
 }
 .footer .icono-red:hover {
   transform: scale(1.2);
-  color: rgba(114.0625, 127.75, 91.25, 0.6745098039);
+  color: rgba(164.8863636364, 207.8636363636, 119.1363636364, 0.4784313725);
 }
 .footer p.small {
   font-size: 12px;
@@ -345,7 +395,7 @@ h5 {
 }
 .icono-red:hover {
   transform: scale(1.1);
-  color: rgba(114.0625, 127.75, 91.25, 0.6745098039);
+  color: rgba(164.8863636364, 207.8636363636, 119.1363636364, 0.4784313725);
 }
 
 .redes-sociales-posicion {

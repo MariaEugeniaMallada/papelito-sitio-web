@@ -253,7 +253,7 @@ h2 {
   flex-direction: column;
   height: 100%;
   padding: 1.5rem;
-  background-color:#F5F0EB;
+  background-color: #F5F0EB;
   color: #C6D2B9;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -281,10 +281,70 @@ h2 {
 .card-text {
   flex: 1;
   font-size: 1rem;
-  color:#444444;
+  color: #444444;
   font-family: $font-general;
   margin-bottom: 1rem;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
+
+.boton {
+  background-color: #C6D2B9;
+  color: #444444;
+  font-family: $font-general;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  display: block;
+  max-width: 200px;
+  margin-top: auto;
+}
+
+.boton-principal {
+  @extend .boton;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: center;
+
+  &:hover {
+    background-color: #bedd9d7a;
+    transform: scale(1.1);
+    color: #444444;
+  }
+}
+
+// 🔧 Media Query para móviles
+@media (max-width: 768px) {
+  .card {
+    min-height: unset; // dejamos que crezca si necesita
+    max-height: unset;
+    overflow: visible; // importante para que no corte contenido
+  }
+
+  .card-body {
+    padding-bottom: 0.5rem;
+  }
+
+  .card-text {
+    -webkit-line-clamp: 4; // menos líneas en móvil
+  }
+
+  .boton-principal {
+    max-width: 100%;
+  }
+}
+
+
 
 .footer {
   background-color: #f5f0eb;
@@ -367,7 +427,8 @@ h2 {
 
     &:hover {
       transform: scale(1.2);
-      color: darken(#8c9b73ac, 10%);
+      color: darken(#bedd9d7a, 10%);
+
     }
   }
 
@@ -384,7 +445,7 @@ h2 {
 
     &:hover {
       transform: scale(1.1);
-      color: darken(#8c9b73ac, 10%);
+      color: darken(#bedd9d7a, 10%);
     }
   }
 .redes-sociales-posicion {
