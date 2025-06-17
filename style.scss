@@ -276,12 +276,15 @@ h2 {
   font-size: 1.25rem;
   margin-bottom: 10px;
   font-family: $font-subtitulo;
-
-  word-break: keep-all; // evita cortar palabras
-  overflow-wrap: break-word; // permite que se corte en espacios
+  display: -webkit-box;
+  -webkit-line-clamp: 2; // cantidad de líneas
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: normal;
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
-
 
 .card-text {
   flex: 1;
@@ -338,16 +341,28 @@ h2 {
 
   .card-body {
     padding-bottom: 0.5rem;
-  }
+  } 
+  .card-title {
+    font-size: 0.95rem;
+     } 
 
   .card-text {
     -webkit-line-clamp: 4; // menos líneas en móvil
+    font-size: 0.85rem;
   }
 
   .boton-principal {
     max-width: 100%;
+    font-size: 0.75;
+  }
+} 
+@media (max-width: 480px) {
+  .card-title {
+    font-size: 0.85rem; // achica un poco el texto
+    line-height: 1.2;
   }
 }
+
 
 
 
