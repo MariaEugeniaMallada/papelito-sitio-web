@@ -10,71 +10,61 @@
     content="origami, productos artesanales, kits de origami, farolitos de papel, decoraciones de papel, plegaderas, papel para origami, atrapasueños, jardín de tulipanes, arte en papel, manualidades">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poiret+One&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poiret+One&family=Raleway:wght@400;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <title>Papelito</title>
   <link rel="shortcut icon" href="./imagenes/logo en negro.png" type="gatito de origami">
 </head>
 
 <body>
- <header>
-  <!-- Primer nav: logo, buscador y botón hamburguesa juntos -->
-  <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <!-- Logo a la izquierda -->
-      <div class="logo-izquierda">
-        <a class="navbar-brand" href="#">
-          <img src="../imagenes/logo2.png" alt="Logo" class="logo-img" />
-        </a>
-      </div>
+  <header>
+    <!-- Primer nav: logo, buscador y botón hamburguesa juntos -->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Logo a la izquierda -->
+        <div class="logo-izquierda">
+          <a class="navbar-brand" href="#">
+            <img src="../imagenes/logo2.png" alt="Logo" class="logo-img" />
+          </a>
+        </div>
 
-      <!-- Buscador al centro -->
-      <div class="form-buscador">
-        <form class="d-flex" role="search">
-          <div class="input-wrapper">
-            <input
-              class="form-control buscador-input"
-              type="search"
-              placeholder="¿Qué estás buscando?"
-              aria-label="Buscar"
-            />
-            <span class="lupa-icon"><i class="bi bi-search"></i></span>
-          </div>
-        </form>
-      </div>
+        <!-- Buscador al centro -->
+        <div class="form-buscador">
+          <form class="d-flex" role="search">
+            <div class="input-wrapper">
+              <input class="form-control buscador-input" type="search" placeholder="¿Qué estás buscando?"
+                aria-label="Buscar" />
+              <span class="lupa-icon"><i class="bi bi-search"></i></span>
+            </div>
+          </form>
+        </div>
 
-      <!-- Botón hamburguesa a la derecha -->
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Segundo nav: menú desplegable -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
-          <li class="nav-item"><a class="nav-link" href="./talleres.html">Talleres</a></li>
-          <li class="nav-item"><a class="nav-link" href="./eventos.html">Eventos</a></li>
-          <li class="nav-item"><a class="nav-link" href="./contactos.html">Contáctanos</a></li>
-        </ul>
+        <!-- Botón hamburguesa a la derecha -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
-    </div>
-  </nav>
-</header>
+    </nav>
+
+    <!-- Segundo nav: menú desplegable -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./talleres.html">Talleres</a></li>
+            <li class="nav-item"><a class="nav-link" href="./eventos.html">Eventos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contactos.html">Contáctanos</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <main>
     <div id="carouselExample" class="carousel slide">
@@ -107,18 +97,17 @@
         <div class="card h-100">
           <img src="../imagenes/Plegadera.png" class="card-img-top img2" alt="Plegaderas" />
           <div class="card-body">
-            <h5 class="card-title t">Plegaderas</h5>
+            <h5 class="card-title t">Plegadera 3D</h5>
             <p class="card-text">
-              Coloridas, resistentes y cómodas. Estas plegaderas hechas en impresora 3D están diseñadas para facilitar
-              tu trabajo al doblar papel con precisión y fluidez. ¡Tu herramienta indispensable para origami!
-            </p>
-            <button type="button" class="btn btn-light boton-principal" style="
+              Herramienta para marcar pliegues, impresa en 3D.
+              $2,5
+              <button type="button" class="btn btn-light boton-principal" style="
                 --bs-btn-padding-y: 0.25rem;
                 --bs-btn-padding-x: 0.5rem;
                 --bs-btn-font-size: 0.75rem;
               ">
-             Más info.
-            </button>
+                Más info.
+              </button>
           </div>
         </div>
       </div>
@@ -127,17 +116,17 @@
           <img src="../imagenes/kit de papeles.png" class="card-img-top img2"
             alt="Kit de Papeles para plegar origamis" />
           <div class="card-body">
-            <h5 class="card-title t">Kit de papeles</h5>
+            <h5 class="card-title t">Set de papeles</h5>
             <p class="card-text">
-              Una selección de 24 papeles variados en colores, texturas y tamaños, lista para dejar volar tu
-              imaginación. Ideal para practicar, crear o regalar.
+              24 papeles variados para plegar.
+              $6
             </p>
             <button type="button" class="btn btn-light boton-principal" style="
                 --bs-btn-padding-y: 0.25rem;
                 --bs-btn-padding-x: 0.5rem;
                 --bs-btn-font-size: 0.75rem;
               ">
-             Más info.
+              Más info.
             </button>
           </div>
         </div>
@@ -146,34 +135,32 @@
         <div class="card h-100">
           <img src="../imagenes/kit de origamis 4.png" class="card-img-top img2" alt="kit para plegar origamis" />
           <div class="card-body">
-            <h5 class="card-title t">Kit de origami</h5>
+            <h5 class="card-title t">Kit de origami creativo</h5>
             <p class="card-text">
-              Todo lo que necesitas para empezar a plegar está aquí: 24 papeles variados, una plegadera, mullos, cintas
-              y un código QR que te lleva a 4 videos tutoriales + 1 bonus para aprender a armar el colgante final.
-              Puedes elegir entre el kit de flores o el de pájaros. ¡Un viaje de creatividad desde casa!
+              Incluye papeles, plegadera, mullos, cintas y acceso a 5 videos.
+              $12
             </p>
             <button type="button" class="btn btn-light boton-principal" style="
                 --bs-btn-padding-y: 0.25rem;
                 --bs-btn-padding-x: 0.5rem;
                 --bs-btn-font-size: 0.75rem;
               ">
-             Más info.
+              Más info.
             </button>
           </div>
         </div>
       </div>
     </div>
     <h2>Origamis decorativos</h2>
-   <div class="row row-cols-2 row-cols-md-3 g-4" data-aos="zoom-in-up">
+    <div class="row row-cols-2 row-cols-md-3 g-4" data-aos="zoom-in-up">
       <div class="col">
         <div class="card h-100">
           <img src="../imagenes/lucecitas mas rojas.jpg" class="card-img-top img2" alt="Farolitos de origamis" />
           <div class="card-body">
-            <h5 class="card-title t">Farolitos de papel</h5>
+            <h5 class="card-title t">Farolitos con luzl</h5>
             <p class="card-text">
-              Ilumina tus noches con esta guirnalda de 3 metros que contiene 100 luces y 50 farolitos de origami hechos
-              a mano. Cada pieza aporta un toque cálido y mágico, ideal para decorar eventos o rincones especiales de tu
-              hogar.
+              Guirnalda de 3 m con 50 farolitos de papel y 100 luces LED.
+              $35
             </p>
             <button type="button" class="btn btn-light boton-principal" style="
                 --bs-btn-padding-y: 0.25rem;
@@ -189,11 +176,10 @@
         <div class="card h-100">
           <img src="../imagenes/llamador de angeles alto 2.png" class="card-img-top img2" alt="llamadores de angeles" />
           <div class="card-body">
-            <h5 class="card-title t">Llamadores de ángeles</h5>
+            <h5 class="card-title t"> Llamador pequeño</h5>
             <p class="card-text">
-              Un detalle lleno de intención: estrellas de origami, una grulla central y 8 cascabeles que suenan
-              suavemente al moverse. Este llamador está pensado para atraer buena energía y dar un aire de paz a tu
-              espacio.
+              Colgante con estrella, grulla y cascabel.
+              $9
             </p>
             <button type="button" class="btn btn-light boton-principal" style="
                 --bs-btn-padding-y: 0.25rem;
@@ -211,16 +197,16 @@
           <div class="card-body">
             <h5 class="card-title t">Jardín de tulipanes</h5>
             <p class="card-text">
-              Un jardín que nunca se marchita. Hecho con 24 papeles de colores y montado sobre una base de madera, este
-              arreglo de tulipanes de origami es un regalo tierno y alegre que florece todos los días.
-            </p>
-            <button type="button" class="btn btn-light boton-principal" style="
+              Base con tulipanes de origami para decorar.
+              $11
+
+              <button type="button" class="btn btn-light boton-principal" style="
                 --bs-btn-padding-y: 0.25rem;
                 --bs-btn-padding-x: 0.5rem;
                 --bs-btn-font-size: 0.75rem;
               ">
-             Más info.
-            </button>
+                Más info.
+              </button>
           </div>
         </div>
       </div>
@@ -239,7 +225,7 @@
                 --bs-btn-padding-x: 0.5rem;
                 --bs-btn-font-size: 0.75rem;
               ">
-             Más info.
+              Más info.
             </button>
           </div>
         </div>
@@ -248,10 +234,10 @@
         <div class="card h-100">
           <img src="../imagenes/atrapasueños zoom.png" class="card-img-top img2" alt="Atrapasueños con origamis" />
           <div class="card-body">
-            <h5 class="card-title t">Atrapasueños de papel</h5>
+            <h5 class="card-title t">Atrapasueños chico</h5>
             <p class="card-text">
-              Una fusión de materiales y simbolismos: mandala de crochet, cintas danzantes y figuras de origami se unen
-              en este atrapasueños único. Decora, protege y embellece cualquier espacio con un objeto lleno de alma.
+              Colgante pequeño con grulla, cintas y cascabel.
+              $6
             </p>
             <button type="button" class="btn btn-light boton-principal" style="
                 --bs-btn-padding-y: 0.25rem;
@@ -267,125 +253,391 @@
         <div class="card h-100">
           <img src="../imagenes/Marcador de libro y libros.jpg" class="card-img-top img2" alt="Separadores de libros" />
           <div class="card-body">
-            <h5 class="card-title t">Separadores de libros</h5>
+            <h5 class="card-title t">Separador ilustrado</h5>
             <p class="card-text">
-              Base de acuarela pintada a mano, combinada con figuras de origami como colibríes, zorritos, palomas o
-              elefantes. Cada uno es distinto y perfecto para acompañarte en tus lecturas favoritas.
+              Base de acuarela con figura de origami.
+              $5
             </p>
             <button type="button" class="btn btn-light boton-principal" style="
                 --bs-btn-padding-y: 0.25rem;
                 --bs-btn-padding-x: 0.5rem;
                 --bs-btn-font-size: 0.75rem;
               ">
-             Más info.
+              Más info.
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../imagenes/lucecitas mas rojas.jpg" class="card-img-top img2" alt="Farolitos de origamis" />
+          <div class="card-body">
+            <h5 class="card-title t">Atrapasueños mediano</h5>
+            <p class="card-text">
+              Colgante mediano con grulla, cintas y detalles decorativos.
+              $12
+
+            </p>
+            <button type="button" class="btn btn-light boton-principal" style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              ">
+              Más info.
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../imagenes/llamador de angeles alto 2.png" class="card-img-top img2" alt="llamadores de angeles" />
+          <div class="card-body">
+            <h5 class="card-title t"> Atrapasueños grande</h5>
+            <p class="card-text">
+              Colgante grande con estrella, grulla, cintas y cascabel.
+              $18
+
+            </p>
+            <button type="button" class="btn btn-light boton-principal" style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              ">
+              Más info.
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../imagenes/jardinera.jpeg" class="card-img-top img2" alt="jardin de tulipanes en origami" />
+          <div class="card-body">
+            <h5 class="card-title t">Colgante simple</h5>
+            <p class="card-text">
+              Figura de origami con cintas para colgar.
+              $6
+            </p>
+            <button type="button" class="btn btn-light boton-principal" style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              ">
+              Más info.
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../imagenes/Guarda hilos.jpg" class="card-img-top img2" alt="Libros de hilos chino en origamis" />
+          <div class="card-body">
+            <h5 class="card-title t">Figura mensaje</h5>
+            <p class="card-text">
+              Grulla o paloma con tarjeta para escribir mensaje.
+              $2
+            </p>
+            <button type="button" class="btn btn-light boton-principal" style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              ">
+              Más info.
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../imagenes/atrapasueños zoom.png" class="card-img-top img2" alt="Atrapasueños con origamis" />
+          <div class="card-body">
+            <h5 class="card-title t">Frasco sorpresa</h5>
+            <p class="card-text">
+              Frasco con figura de papel y arema decorativa.
+              $6
+            </p>
+            <button type="button" class="btn btn-light boton-principal" style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              ">
+              Más info.
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../imagenes/Marcador de libro y libros.jpg" class="card-img-top img2" alt="Separadores de libros" />
+          <div class="card-body">
+            <h5 class="card-title t">Frasco estrellas</h5>
+            <p class="card-text">
+              Frasco con estrellas de papel y decoración especial.
+              $10
+              <button type="button" class="btn btn-light boton-principal" style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              ">
+                Más info.
+              </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../imagenes/lucecitas mas rojas.jpg" class="card-img-top img2" alt="Farolitos de origamis" />
+          <div class="card-body">
+            <h5 class="card-title t">Colgante geométrico cubo</h5>
+            <p class="card-text">
+              Cubo de papel con grulla colgante.
+              $16
+            </p>
+            <button type="button" class="btn btn-light boton-principal" style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              ">
+              Más info.
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../imagenes/llamador de angeles alto 2.png" class="card-img-top img2" alt="llamadores de angeles" />
+          <div class="card-body">
+            <h5 class="card-title t">Colgante geométrico estrella</h5>
+            <p class="card-text">
+              Estrella de papel con grulla colgante.
+              $16
+            </p>
+            <button type="button" class="btn btn-light boton-principal" style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              ">
+              Más info.
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../imagenes/jardinera.jpeg" class="card-img-top img2" alt="jardin de tulipanes en origami" />
+          <div class="card-body">
+            <h5 class="card-title t"> Lápiz con estrellita</h5>
+            <p class="card-text">
+              Lápiz decorado con una estrellita de papel.
+              $3
+
+              <button type="button" class="btn btn-light boton-principal" style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              ">
+                Más info.
+              </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../imagenes/Guarda hilos.jpg" class="card-img-top img2" alt="Libros de hilos chino en origamis" />
+          <div class="card-body">
+            <h5 class="card-title t"> Llamador grande</h5>
+            <p class="card-text">
+              Colgante grande con estrella, grulla, cintas y cascabel.
+              $18
+            </p>
+            <button type="button" class="btn btn-light boton-principal" style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              ">
+              Más info.
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../imagenes/atrapasueños zoom.png" class="card-img-top img2" alt="Atrapasueños con origamis" />
+          <div class="card-body">
+            <h5 class="card-title t">Mini tarjeta corazón</h5>
+            <p class="card-text">
+              Tarjeta en forma de corazón plegado.
+              $1,5
+
+            </p>
+            <button type="button" class="btn btn-light boton-principal" style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              ">
+              Más info.
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../imagenes/Marcador de libro y libros.jpg" class="card-img-top img2" alt="Separadores de libros" />
+          <div class="card-body">
+            <h5 class="card-title t">Trompo de papel</h5>
+            <p class="card-text">
+              Juguete giratorio hecho de origami.
+              $4
+
+            </p>
+            <button type="button" class="btn btn-light boton-principal" style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              ">
+              Más info.
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../imagenes/Marcador de libro y libros.jpg" class="card-img-top img2" alt="Separadores de libros" />
+          <div class="card-body">
+            <h5 class="card-title t">Cuadro con figura geométrica</h5>
+            <p class="card-text">
+              Composición enmarcada con formas de origami.
+              (precio pendiente)
+            </p>
+            <button type="button" class="btn btn-light boton-principal" style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              ">
+              Más info.
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="../imagenes/Marcador de libro y libros.jpg" class="card-img-top img2" alt="Separadores de libros" />
+          <div class="card-body">
+            <h5 class="card-title t">Colgantes largos</h5>
+            <p class="card-text">
+              (en espera de descripción y precio)
+            </p>
+            <button type="button" class="btn btn-light boton-principal" style="
+                --bs-btn-padding-y: 0.25rem;
+                --bs-btn-padding-x: 0.5rem;
+                --bs-btn-font-size: 0.75rem;
+              ">
+              Más info.
             </button>
           </div>
         </div>
       </div>
     </div>
   </main>
- <footer class="footer bg-body-tertiary mt-5 py-4">
-  <div class="container">
-    <div class="row">
+  <footer class="footer bg-body-tertiary mt-5 py-4">
+    <div class="container">
+      <div class="row">
 
-      <!-- Columna 1: Información general con acordeón -->
-      <div class="col-md-4 mb-4">
-        <h5 class="mb-2">INFORMACIÓN GENERAL</h5>
-        <div class="accordion" id="accordionFooter">
-          <div class="accordion-item mb-1">
-            <h2 class="accordion-header" id="headingCompra">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseCompra" aria-expanded="false" aria-controls="collapseCompra">
-                Guía de compra
-              </button>
-            </h2>
-            <div id="collapseCompra" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
-              <div class="accordion-body">Información sobre cómo realizar una compra en Papelito.</div>
+        <!-- Columna 1: Información general con acordeón -->
+        <div class="col-md-4 mb-4">
+          <h5 class="mb-2">INFORMACIÓN GENERAL</h5>
+          <div class="accordion" id="accordionFooter">
+            <div class="accordion-item mb-1">
+              <h2 class="accordion-header" id="headingCompra">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseCompra" aria-expanded="false" aria-controls="collapseCompra">
+                  Guía de compra
+                </button>
+              </h2>
+              <div id="collapseCompra" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                <div class="accordion-body">Información sobre cómo realizar una compra en Papelito.</div>
+              </div>
             </div>
-          </div>
 
-          <div class="accordion-item mb-1">
-            <h2 class="accordion-header" id="headingCambios">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseCambios" aria-expanded="false" aria-controls="collapseCambios">
-                Cambios y devoluciones
-              </button>
-            </h2>
-            <div id="collapseCambios" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
-              <div class="accordion-body">Condiciones y plazos para cambios o devoluciones.</div>
+            <div class="accordion-item mb-1">
+              <h2 class="accordion-header" id="headingCambios">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseCambios" aria-expanded="false" aria-controls="collapseCambios">
+                  Cambios y devoluciones
+                </button>
+              </h2>
+              <div id="collapseCambios" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                <div class="accordion-body">Condiciones y plazos para cambios o devoluciones.</div>
+              </div>
             </div>
-          </div>
 
-          <div class="accordion-item mb-1">
-            <h2 class="accordion-header" id="headingTerminos">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseTerminos" aria-expanded="false" aria-controls="collapseTerminos">
-                Términos y condiciones
-              </button>
-            </h2>
-            <div id="collapseTerminos" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
-              <div class="accordion-body">Consulta nuestros términos legales y de uso.</div>
+            <div class="accordion-item mb-1">
+              <h2 class="accordion-header" id="headingTerminos">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTerminos" aria-expanded="false" aria-controls="collapseTerminos">
+                  Términos y condiciones
+                </button>
+              </h2>
+              <div id="collapseTerminos" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                <div class="accordion-body">Consulta nuestros términos legales y de uso.</div>
+              </div>
             </div>
-          </div>
 
-          <div class="accordion-item mb-1">
-            <h2 class="accordion-header" id="headingPrivacidad">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapsePrivacidad" aria-expanded="false" aria-controls="collapsePrivacidad">
-                Políticas de Privacidad
-              </button>
-            </h2>
-            <div id="collapsePrivacidad" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
-              <div class="accordion-body">Cómo protegemos tus datos personales.</div>
+            <div class="accordion-item mb-1">
+              <h2 class="accordion-header" id="headingPrivacidad">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsePrivacidad" aria-expanded="false" aria-controls="collapsePrivacidad">
+                  Políticas de Privacidad
+                </button>
+              </h2>
+              <div id="collapsePrivacidad" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                <div class="accordion-body">Cómo protegemos tus datos personales.</div>
+              </div>
             </div>
-          </div>
 
-          <div class="accordion-item mb-1">
-            <h2 class="accordion-header" id="headingEnvios">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#collapseEnvios" aria-expanded="false" aria-controls="collapseEnvios">
-                Políticas de envío y entrega
-              </button>
-            </h2>
-            <div id="collapseEnvios" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
-              <div class="accordion-body">Información sobre métodos y tiempos de envío.</div>
+            <div class="accordion-item mb-1">
+              <h2 class="accordion-header" id="headingEnvios">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseEnvios" aria-expanded="false" aria-controls="collapseEnvios">
+                  Políticas de envío y entrega
+                </button>
+              </h2>
+              <div id="collapseEnvios" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                <div class="accordion-body">Información sobre métodos y tiempos de envío.</div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <!-- Columna 2: Acerca de nosotros -->
-      <div class="col-md-4 mb-4">
-        <h5 class="mb-2">ACERCA DE NOSOTROS</h5>
-        <ul class="list-unstyled ps-1" style="margin-bottom: 1rem;">
-          <li style="margin-bottom: 1rem;"><a href="../index.html" class="footer-link">Sobre Papelito</a></li>
-          <li style="margin-bottom: 1rem;"><a href="./contactos.html" class="footer-link">Contactos</a></li>
-          <li style="margin-bottom: 1rem;"><a href="#" class="footer-link">Preguntas frecuentes</a></li>
-        </ul>
-      </div>
-
-      <!-- Columna 3: Redes sociales -->
-      <div class="col-md-4 mb-4">
-        <h5 class="mb-2">SÍGUENOS EN NUESTRAS REDES SOCIALES</h5>
-        <div class="d-flex gap-3 ps-1">
-          <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram icono-red"></i></a>
-          <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook icono-red"></i></a>
-          <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube icono-red"></i></a>
-          <a href="https://wa.me/123456789" target="_blank"><i class="bi bi-whatsapp icono-red"></i></a>
-          <a href="mailto:correo@papelito.com"><i class="bi bi-envelope-fill icono-red"></i></a>
+        <!-- Columna 2: Acerca de nosotros -->
+        <div class="col-md-4 mb-4">
+          <h5 class="mb-2">ACERCA DE NOSOTROS</h5>
+          <ul class="list-unstyled ps-1" style="margin-bottom: 1rem;">
+            <li style="margin-bottom: 1rem;"><a href="../index.html" class="footer-link">Sobre Papelito</a></li>
+            <li style="margin-bottom: 1rem;"><a href="./contactos.html" class="footer-link">Contactos</a></li>
+            <li style="margin-bottom: 1rem;"><a href="#" class="footer-link">Preguntas frecuentes</a></li>
+          </ul>
         </div>
-      </div>
-      <p class="mt-3 small text-muted">&copy; 2025 Papelito. Todos los derechos reservados.</p>
 
+        <!-- Columna 3: Redes sociales -->
+        <div class="col-md-4 mb-4">
+          <h5 class="mb-2">SÍGUENOS EN NUESTRAS REDES SOCIALES</h5>
+          <div class="d-flex gap-3 ps-1">
+            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram icono-red"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook icono-red"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube icono-red"></i></a>
+            <a href="https://wa.me/123456789" target="_blank"><i class="bi bi-whatsapp icono-red"></i></a>
+            <a href="mailto:correo@papelito.com"><i class="bi bi-envelope-fill icono-red"></i></a>
+          </div>
+        </div>
+        <p class="mt-3 small text-muted">&copy; 2025 Papelito. Todos los derechos reservados.</p>
+
+      </div>
     </div>
-  </div>
-</footer>
-   <a href="https://wa.me/598XXXXXXXX" 
-   class="btn-whatsapp" 
-   target="_blank" 
-   aria-label="Enviarnos un mensaje por WhatsApp">
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
-</a>
+  </footer>
+  <a href="https://wa.me/598XXXXXXXX" class="btn-whatsapp" target="_blank"
+    aria-label="Enviarnos un mensaje por WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+  </a>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();

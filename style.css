@@ -78,7 +78,8 @@ h5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap; /* Para mantener logo y buscador en línea por defecto */
+  flex-wrap: nowrap;
+  /* Para mantener logo y buscador en línea por defecto */
 }
 .navbar .logo-izquierda {
   display: flex;
@@ -122,8 +123,10 @@ h5 {
   outline: none;
 }
 .navbar-expand-lg .navbar-nav {
-  display: flex !important; /* Forzar display flex para que gap funcione */
-  gap: 24px !important; /* Espacio entre los <li> */
+  display: flex !important;
+  /* Forzar display flex para que gap funcione */
+  gap: 24px !important;
+  /* Espacio entre los <li> */
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
@@ -527,6 +530,18 @@ h5 {
   width: 450px;
   height: 300px;
   object-fit: cover;
+}
+.cardh .card-text {
+  display: block;
+  overflow: visible;
+  text-overflow: unset;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  -webkit-box-orient: unset;
+  white-space: normal;
+  max-height: unset;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .wrapper-video {
