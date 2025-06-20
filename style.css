@@ -661,10 +661,10 @@ form.d-flex input {
 #carouselProductos {
   position: relative;
   margin: 2rem auto;
-  max-width: 1200px;
+  max-width: 1300px;
 }
 #carouselProductos .carousel-item {
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
 }
 #carouselProductos .carousel-card {
   max-width: 300px;
@@ -692,6 +692,14 @@ form.d-flex input {
   font-size: 1.1rem;
   color: #af6d04;
   font-family: "Raleway", sans-serif;
+}
+#carouselProductos .clamp-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
 }
 #carouselProductos .card-text {
   font-size: 0.95rem;
