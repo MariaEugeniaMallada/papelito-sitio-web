@@ -658,4 +658,99 @@ form.d-flex input {
   z-index: 1;
 }
 
+#carouselProductos {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+#carouselProductos .carousel-item {
+  padding: 1rem 2rem;
+}
+#carouselProductos .carousel-card {
+  max-width: 300px;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #F5F0EB;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+#carouselProductos .card-img-top {
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  width: 100%;
+}
+#carouselProductos .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#carouselProductos .card-title {
+  font-size: 1.1rem;
+  color: #af6d04;
+  font-family: "Raleway", sans-serif;
+}
+#carouselProductos .card-text {
+  font-size: 0.95rem;
+  color: #444444;
+  min-height: 5.5em;
+}
+#carouselProductos .clamp-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+}
+#carouselProductos .button {
+  margin-top: auto;
+}
+#carouselProductos .carousel-control-prev,
+#carouselProductos .carousel-control-next {
+  width: 5%;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+#carouselProductos .carousel-control-prev .carousel-control-prev-icon,
+#carouselProductos .carousel-control-prev .carousel-control-next-icon,
+#carouselProductos .carousel-control-next .carousel-control-prev-icon,
+#carouselProductos .carousel-control-next .carousel-control-next-icon {
+  background-color: transparent;
+  background-image: none;
+}
+#carouselProductos .carousel-control-prev .carousel-control-prev-icon::before,
+#carouselProductos .carousel-control-prev .carousel-control-next-icon::before,
+#carouselProductos .carousel-control-next .carousel-control-prev-icon::before,
+#carouselProductos .carousel-control-next .carousel-control-next-icon::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: solid #8c9b73;
+  border-width: 0 3px 3px 0;
+  padding: 5px;
+  transform: rotate(135deg);
+}
+#carouselProductos .carousel-control-prev.carousel-control-next .carousel-control-next-icon::before,
+#carouselProductos .carousel-control-next.carousel-control-next .carousel-control-next-icon::before {
+  transform: rotate(-45deg);
+}
+@media (max-width: 992px) {
+  #carouselProductos .carousel-card {
+    max-width: 30%;
+    min-height: 420px;
+  }
+}
+@media (max-width: 767.98px) {
+  #carouselProductos .carousel-card {
+    max-width: 45%;
+    min-height: 420px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

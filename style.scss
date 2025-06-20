@@ -745,3 +745,108 @@ form.d-flex {
     }
   }
 }
+
+#carouselProductos {
+  position: relative;
+  margin: 2rem auto;
+  max-width: 1200px;
+
+  .carousel-item {
+    padding: 1rem 2rem;
+  }
+
+  .carousel-card {
+    max-width: 300px;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F5F0EB;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    width: 100%;
+  }
+
+  .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    color: #af6d04;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    color: #444444;
+    min-height: 5.5em; // fuerza altura uniforme para el texto
+  }
+
+  .clamp-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+  }
+
+  .button {
+    margin-top: auto; // asegura el botón abajo
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+    top: 40%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: transparent;
+      background-image: none;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border: solid #8c9b73;
+        border-width: 0 3px 3px 0;
+        padding: 5px;
+        transform: rotate(135deg);
+      }
+    }
+
+    &.carousel-control-next .carousel-control-next-icon::before {
+      transform: rotate(-45deg);
+    }
+  }
+
+  @media (max-width: 992px) {
+    .carousel-card {
+      max-width: 30%;
+      min-height: 420px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    .carousel-card {
+      max-width: 45%;
+      min-height: 420px;
+    }
+  }
+}
+
+

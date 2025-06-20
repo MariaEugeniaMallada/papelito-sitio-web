@@ -90,58 +90,103 @@
     </div>
     <h1>Bienvenidos a Papelito</h1>
     <h2 class="fw-semibold">Novedades</h2>
-    <div class="row row-cols-2 row-cols-md-3 g-4" data-aos="zoom-in-up">
-      <div class="col">
-        <div class="card h-100">
-          <img src="./imagenes/Guarda hilos.jpg" class="card-img-top img2" alt="Libro de hilos chinos en oriamis">
-          <div class="card-body">
-            <h5 class="card-title t">Libro de hilos chinos</h5>
-            <p class="card-text">Mucho más que origami: este libro está pensado para que guardes flores secas, cartas,
-              mensajes y recuerdos en pequeñas cajas plegadas con cariño. Contiene 4 niveles de cajas de distintos
-              tamaños y está encuadernado con esmero. Una pieza interactiva, personal y significativa.</p>
-            <button type="button" class="btn btn-light boton-principal fw-normal"
-              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-              Más info.
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="./imagenes/kit de origamis 4.png" class="card-img-top img2"
-            alt="kit de papeles para hacer origamis">
-          <div class="card-body">
-            <h5 class="card-title t"> Kit de origami creativo</h5>
-            <p class="card-text"> Incluye papeles, plegadera, mullos, cintas y acceso a 5 videos.
-              $12</p>
-            <button type="button" class="btn btn-light boton-principal fw-normal"
-              style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-              Más info.
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="./imagenes/Plegadera.png" class="card-img-top img2" alt="Plegaderas" />
-          <div class="card-body">
-            <h5 class="card-title t">Plegadera 3D</h5>
-            <p class="card-text">
-              Herramienta para marcar pliegues, impresa en 3D.
-              $2,5
+    <div id="carouselProductos" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
 
-            </p>
-            <button type="button" class="btn btn-light boton-principal fw-normal" style="
-                --bs-btn-padding-y: 0.25rem;
-                --bs-btn-padding-x: 0.5rem;
-                --bs-btn-font-size: 0.75rem;
-                          ">
-              Más info.
-            </button>
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center flex-wrap gap-3">
+            <!-- Card 1 -->
+            <div class="card carousel-card">
+              <img src="./imagenes/Guarda hilos.jpg" class="card-img-top" alt="Libro de hilos chinos en oriamis">
+              <div class="card-body">
+                <h5 class="card-title">Libro de hilos chinos</h5>
+                <p class="card-text clamp-text">
+                  Mucho más que origami: este libro está pensado para que guardes flores secas, cartas,
+                  mensajes y recuerdos en pequeñas cajas plegadas con cariño...
+                </p>
+                <button class="btn btn-light boton-principal">Más info.</button>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card carousel-card">
+              <img src="./imagenes/kit de origamis 4.png" class="card-img-top" alt="kit de papeles para hacer origamis">
+              <div class="card-body">
+                <h5 class="card-title">Kit de origami creativo</h5>
+                <p class="card-text clamp-text">
+                  Incluye papeles, plegadera, mullos, cintas y acceso a 5 videos. $12
+                </p>
+                <button class="btn btn-light boton-principal">Más info.</button>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card carousel-card d-none d-md-block">
+              <img src="./imagenes/Plegadera.png" class="card-img-top" alt="Plegadera 3D">
+              <div class="card-body">
+                <h5 class="card-title">Plegadera 3D</h5>
+                <p class="card-text clamp-text">
+                  Herramienta para marcar pliegues, impresa en 3D. $2,5
+                </p>
+                <button class="btn btn-light boton-principal">Más info.</button>
+              </div>
+            </div>
           </div>
         </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center flex-wrap gap-3">
+            <!-- Card 4 -->
+            <div class="card carousel-card">
+              <img src="./imagenes/cuadros.jpeg" class="card-img-top" alt="Otro producto">
+              <div class="card-body">
+                <h5 class="card-title">Origami Zen</h5>
+                <p class="card-text clamp-text">
+                  Kit para meditación con papel. Instrucciones guiadas y papeles artesanales.
+                </p>
+                <button class="btn btn-light boton-principal">Más info.</button>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card carousel-card">
+              <img src="./imagenes/llamador de angeles rojo.jpg" class="card-img-top" alt="Otro producto 2">
+              <div class="card-body">
+                <h5 class="card-title">Guirnalda de grullas</h5>
+                <p class="card-text clamp-text">
+                  Grullas de papel en guirnalda. Ideales para decorar con significado y color.
+                </p>
+                <button class="btn btn-light boton-principal">Más info.</button>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card carousel-card d-none d-md-block">
+              <img src="./imagenes/flor lila.jpeg" class="card-img-top" alt="Otro producto 3">
+              <div class="card-body">
+                <h5 class="card-title">Caja mágica</h5>
+                <p class="card-text clamp-text">
+                  Una caja con sorpresas plegadas: mensajes ocultos, flores y estrellas.
+                </p>
+                <button class="btn btn-light boton-principal">Más info.</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
+
+      <!-- Flechas -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductos" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselProductos" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
     </div>
+
     <h2>Sobre Papelito</h2>
     <div class="card mb-3 cardh" style="max-width: 1440px;" data-aos="zoom-in-up">
       <div class="row g-0">
