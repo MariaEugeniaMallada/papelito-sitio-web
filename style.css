@@ -543,6 +543,12 @@ h5 {
   max-height: unset;
   font-size: 1rem;
   line-height: 1.5;
+  padding: 10px;
+}
+
+.cardh .col-md-4 {
+  display: flex;
+  align-items: center; /* centra verticalmente */
 }
 
 .seccion-video {
@@ -778,6 +784,11 @@ form.d-flex input {
   padding: 10px;
   margin: 10px auto;
   max-width: 900px;
+}
+
+.cardh .titulo-cardh {
+  margin: 0.5rem !important;
+  padding: 10px !important;
 }
 
 /*# sourceMappingURL=style.css.map */
