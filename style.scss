@@ -28,6 +28,7 @@ h1 {
     font-size: 16px;
     text-align: center;
     @include margin(50, 20, 20, 20);
+    padding: 20px;
   }
 }
 
@@ -856,6 +857,20 @@ form.d-flex {
       max-width: 30%;
       min-height: 420px;
     }
+    .card-title {
+    font-size: 1rem;
+  }
+
+  .card-text {
+    font-size: 0.90rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; // menos líneas en móvil
+    line-clamp: 4; // estándar para compatibilidad
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   }
 
   @media (max-width: 767.98px) {
@@ -866,4 +881,14 @@ form.d-flex {
   }
 }
 
+.intro-talleres {
+  color: #444444;
+  font-family: $font-general;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 900px;
+}
 
+ 

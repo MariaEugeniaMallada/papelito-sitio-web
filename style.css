@@ -24,6 +24,7 @@ h1 p {
   margin-bottom: 20;
   margin-left: 20;
   margin-right: 20;
+  padding: 20px;
 }
 
 h2 {
@@ -760,12 +761,34 @@ form.d-flex input {
     max-width: 30%;
     min-height: 420px;
   }
+  #carouselProductos .card-title {
+    font-size: 1rem;
+  }
+  #carouselProductos .card-text {
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 @media (max-width: 767.98px) {
   #carouselProductos .carousel-card {
     max-width: 45%;
     min-height: 420px;
   }
+}
+
+.intro-talleres {
+  color: #444444;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 900px;
 }
 
 /*# sourceMappingURL=style.css.map */
