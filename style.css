@@ -762,10 +762,10 @@ form.d-flex input {
     min-height: 420px;
   }
   #carouselProductos .card-title {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
   #carouselProductos .card-text {
-    font-size: 0.9rem;
+    font-size: 0.9rem !important;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     line-clamp: 4;
