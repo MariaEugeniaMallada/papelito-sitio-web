@@ -624,14 +624,21 @@ h5 {
 }
 
 
-.wrapper-video {
+.seccion-video {
+  width: 100%;
   padding: 1rem;
+}
+
+.wrapper-video {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .video-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%;
+  padding-top: 56.25%; // Relación 16:9
   overflow: hidden;
 }
 
@@ -643,6 +650,8 @@ h5 {
   height: 100%;
   object-fit: cover;
 }
+
+
 
 .scale {
   transform: scale(1.3);

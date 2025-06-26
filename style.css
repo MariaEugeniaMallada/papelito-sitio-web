@@ -544,8 +544,15 @@ h5 {
   line-height: 1.5;
 }
 
-.wrapper-video {
+.seccion-video {
+  width: 100%;
   padding: 1rem;
+}
+
+.wrapper-video {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 .video-container {
