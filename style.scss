@@ -851,35 +851,27 @@ form.d-flex {
       transform: rotate(-45deg);
     }
   }
-
-  @media (max-width: 992px) {
-    .carousel-card {
-      max-width: 30%;
-      min-height: 420px;
     }
-    .card-title {
-    font-size: 1rem !important;
-  }
 
-  .card-text {
-    font-size: 0.90rem !important;
-    display: -webkit-box;
-    -webkit-line-clamp: 4; // menos líneas en móvil
-    line-clamp: 4; // estándar para compatibilidad
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  }
-
-  @media (max-width: 767.98px) {
+ @media (max-width: 768px) {
+  #carouselProductos {
     .carousel-card {
       max-width: 45%;
-      min-height: 420px;
+    }
+
+    .card-title {
+      font-size: 0.95rem; // igual al de las cards comunes
+    }
+
+    .card-text {
+      font-size: 0.85rem;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
     }
   }
 }
+
+
 
 .intro-talleres {
   color: #444444;
