@@ -2,6 +2,21 @@ $font-titulo: 'Poiret One', cursive;
 $font-subtitulo: 'Raleway', sans-serif;
 $font-general: 'Lato', sans-serif;
 
+// 🎄 VARIABLES NAVIDEÑAS
+$navidad-red: #dc3545;
+$navidad-green: #198754; 
+$navidad-gold: #ffc107;
+
+// 🎄 ANIMACIÓN DEL GRADIENTE
+@keyframes navidad-gradient-move {
+  0%, 100% { 
+    background-position: 0% 50%; 
+  }
+  50% { 
+    background-position: 100% 50%; 
+  }
+}
+
 @mixin margin($margin-top, $margin-bottom, $margin-left, $margin-right) {
   margin-top: $margin-top;
   margin-bottom: $margin-bottom;
@@ -214,7 +229,7 @@ h5 {
       color: transparent;
     }
 
-    /* Cuando se hace foco, se expande el input */
+    
     .buscador-input:focus {
       width: 160px;
       border-radius: 5px;
@@ -225,7 +240,6 @@ h5 {
       background-color: #fff;
     }
 
-    /* También podés permitir que se expanda con el hover si querés */
     .input-wrapper:hover .buscador-input {
       width: 160px;
       border-radius: 5px;
@@ -429,9 +443,9 @@ h5 {
 // 🔧 Media Query para móviles
 @media (max-width: 768px) {
   .card {
-    min-height: unset; // dejamos que crezca si necesita
+    min-height: unset; 
     max-height: unset;
-    overflow: visible; // importante para que no corte contenido
+    overflow: visible; 
   }
 
   .card-body {
@@ -445,8 +459,8 @@ h5 {
   .card-text {
     font-size: 0.90rem;
     display: -webkit-box;
-    -webkit-line-clamp: 4; // menos líneas en móvil
-    line-clamp: 4; // estándar para compatibilidad
+    -webkit-line-clamp: 4; 
+    line-clamp: 4; 
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -455,29 +469,29 @@ h5 {
 
   .boton-principal {
     max-width: 100%;
-    font-size: 0.70rem; // ahora con unidad correcta
-    padding: 0.3rem 0.80rem; // achica un poco el padding también
+    font-size: 0.70rem; 
+    padding: 0.3rem 0.80rem;
   }
 }
 
 @media (max-width: 480px) {
   .card-title {
-    font-size: 0.90rem; // achica un poco el texto
+    font-size: 0.90rem; 
     line-height: 1.2;
   }
 
   .card-text {
     font-size: 0.80rem;
     display: -webkit-box;
-    -webkit-line-clamp: 4; // menos líneas en móvil
-    line-clamp: 4; // estándar para compatibilidad
+    -webkit-line-clamp: 4; 
+    line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
   .boton-principal {
-    font-size: 0.70rem; // un poco más pequeño para pantallas muy chicas
+    font-size: 0.70rem; 
     padding: 0.4rem 0.8rem;
   }
 }
@@ -527,7 +541,7 @@ h5 {
 
     &::after {
       margin-left: auto;
-      margin-right: 0.5rem; // <- flechita más a la izquierda
+      margin-right: 0.5rem; 
     }
 
     &:not(.collapsed) {
@@ -587,7 +601,7 @@ h5 {
 }
 
 .redes-sociales-posicion {
-  margin-top: -20px; // Ajustá el valor a tu gusto
+  margin-top: -20px;
 }
 
 
@@ -627,7 +641,7 @@ h5 {
 
   .cardh .col-md-4 {
   display: flex;
-  align-items: center; /* centra verticalmente */
+  align-items: center; 
 }
 
 .seccion-video {
@@ -644,7 +658,7 @@ h5 {
 .video-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; // Relación 16:9
+  padding-top: 56.25%; 
   overflow: hidden;
 }
 
@@ -739,7 +753,7 @@ form.d-flex {
       font-weight: normal;
       border: none;
       border-radius: 4px;
-      padding: 6px 36px 6px 12px; // Espacio suficiente para lupa y ❌
+      padding: 6px 36px 6px 12px; 
       box-sizing: border-box;
 
       &:focus {
@@ -812,7 +826,7 @@ form.d-flex {
   .card-text {
     font-size: 0.95rem;
     color: #444444;
-    min-height: 5.5em; // fuerza altura uniforme para el texto
+    min-height: 5.5em; 
   }
 
   .clamp-text {
@@ -825,7 +839,7 @@ form.d-flex {
   }
 
   .button {
-    margin-top: auto; // asegura el botón abajo
+    margin-top: auto; 
   }
 
   .carousel-control-prev,
@@ -865,7 +879,7 @@ form.d-flex {
     }
 
     .card-title {
-      font-size: 0.95rem; // igual al de las cards comunes
+      font-size: 0.95rem; 
     }
 
     .card-text {
@@ -893,4 +907,66 @@ form.d-flex {
   padding: 10px !important; 
 }
 
+main .accordion {
+  .accordion-item {
+    background-color: #faf7f2;
+    border: 1px solid #faf7f2;
+    margin-bottom: 0.5rem;
+    border-radius: 0.375rem;
+    
+    .accordion-button {
+      background-color: #faf7f2;
+      color: #7e4f16;
+      font-family: $font-general;
+      font-weight: 500;
+      
+      &:not(.collapsed) {
+        background-color: #faf7f2;
+        color: #7e4f16;
+        box-shadow: none;
+      }
+      
+      &:hover {
+        background-color: #f5f0eb;
+        color: #7e4f16;
+      }
+      
+      &:focus {
+        border-color: #bedd9d7a;
+        box-shadow: 0 0 0 0.25rem rgba(190, 221, 157, 0.3);
+      }
+    }
+    
+    .accordion-body {
+      background-color: #faf7f2;
+      color: #555;
+      padding: 1.25rem;
+      border-top: 1px solid #faf7f2;
+    }
+  }
+}
+
+
+
+.navidad-gradient {
+  display: inline-block; /* Asegura que el degradado se aplique bien */
+  background: linear-gradient(90deg, red, gold, green, gold, red);
+  background-size: 300% 300%;
+  animation: navidad-gradient-move 3s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Necesario en Chrome/Edge */
+
  
+&:hover {
+    animation-duration: 1.5s;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+  }
+
+} 
+@keyframes navidad-gradient-move {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}

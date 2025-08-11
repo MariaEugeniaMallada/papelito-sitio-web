@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Preguntas frecuentes sobre pedidos, productos, talleres y contacto en Papelito.">
+    <meta name="keywords" content="Papelito, preguntas frecuentes, FAQ, origami artesanal, talleres, envíos, pedidos">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Poiret+One&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Preguntas Frecuentes - Papelito</title>
+    <link rel="shortcut icon" href="../imagenes/logo en negro.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <!-- Primer nav: logo, buscador y botón hamburguesa juntos -->
+        <nav class="navbar bg-body-tertiary">
+            <div class="container-fluid">
+                <!-- Logo a la izquierda -->
+                <div class="logo-izquierda">
+                    <a class="navbar-brand" href="#">
+                        <img src="../imagenes/logo2.png" alt="Logo" class="logo-img" />
+                    </a>
+                </div>
+
+                <!-- Buscador al centro -->
+                <div class="form-buscador">
+                    <form class="d-flex" role="search">
+                        <div class="input-wrapper">
+                            <input class="form-control buscador-input" type="search" placeholder="¿Qué estás buscando?"
+                                aria-label="Buscar" />
+                            <span class="lupa-icon"><i class="bi bi-search"></i></span>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Botón hamburguesa a la derecha -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Segundo nav: menú desplegable -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                        <li class="nav-item">
+               <a class="nav-link navidad-gradient" href="./navidad.html">Navidad</a>
+              </li>
+                        <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./talleres.html">Talleres</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./eventos.html">Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./sobrepapelito.html">Sobre Papelito</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./contactos.html">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO -->
+    <main class="container py-5">
+        <h1 class="text-center mb-4">Preguntas Frecuentes</h1>
+
+        <!-- SOBRE PEDIDOS -->
+        <h3 class="mb-3">Sobre pedidos</h3>
+        <div class="accordion accordion-papelito-custom mb-4" id="faqPedidos">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pedido1">
+                        ¿Cómo hago un pedido?
+                    </button>
+                </h2>
+                <div id="pedido1" class="accordion-collapse collapse" data-bs-parent="#faqPedidos">
+                    <div class="accordion-body">Escríbenos por WhatsApp. Coordinamos juntas todo: producto, colores, cantidad, fecha y forma de entrega.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pedido2">
+                        ¿Con cuánta anticipación debo hacer un pedido?
+                    </button>
+                </h2>
+                <div id="pedido2" class="accordion-collapse collapse" data-bs-parent="#faqPedidos">
+                    <div class="accordion-body">Idealmente con al menos una semana. Si necesitas algo urgente, escríbeme y vemos si es posible o si hay stock disponible.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pedido3">
+                        ¿Puedo elegir los colores o el diseño?
+                    </button>
+                </h2>
+                <div id="pedido3" class="accordion-collapse collapse" data-bs-parent="#faqPedidos">
+                    <div class="accordion-body">¡Claro! Los pedidos son personalizados. Te mostraré opciones y decidiremos juntas.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pedido4">
+                        ¿Hacen entregas a domicilio?
+                    </button>
+                </h2>
+                <div id="pedido4" class="accordion-collapse collapse" data-bs-parent="#faqPedidos">
+                    <div class="accordion-body">Sí, dependiendo de la zona. El costo de envío se calcula según la ubicación.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pedido5">
+                        ¿Tienen productos para entrega inmediata?
+                    </button>
+                </h2>
+                <div id="pedido5" class="accordion-collapse collapse" data-bs-parent="#faqPedidos">
+                    <div class="accordion-body">Sí, dependiendo del producto. Escríbenos y cuéntanos qué necesitas.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SOBRE PRODUCTOS -->
+        <h3 class="mb-3">SOBRE LOS PRODUCTOS</h3>
+        <div class="accordion accordion-papelito-custom mb-4" id="faqProductos">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prod1">
+                        ¿Los productos son 100% hechos a mano?
+                    </button>
+                </h2>
+                <div id="prod1" class="accordion-collapse collapse" data-bs-parent="#faqProductos">
+                    <div class="accordion-body">Sí, todo está plegado y armado a mano, con mucho cuidado y dedicación.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prod2">
+                        ¿Qué tipo de papeles usan?
+                    </button>
+                </h2>
+                <div id="prod2" class="accordion-collapse collapse" data-bs-parent="#faqProductos">
+                    <div class="accordion-body">Uso papeles especiales para origami, con colores y texturas variados.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prod3">
+                        ¿Puedo pedir algo que no esté en el catálogo?
+                    </button>
+                </h2>
+                <div id="prod3" class="accordion-collapse collapse" data-bs-parent="#faqProductos">
+                    <div class="accordion-body">¡Sí! Si tienes una idea especial, me encanta crear cosas nuevas. Escríbeme y lo conversamos.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prod4">
+                        ¿Los colores o formas pueden variar?
+                    </button>
+                </h2>
+                <div id="prod4" class="accordion-collapse collapse" data-bs-parent="#faqProductos">
+                    <div class="accordion-body">Sí. Al ser artesanal, cada pieza es única. Las fotos son referenciales.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prod5">
+                        ¿Tienen opciones para regalar?
+                    </button>
+                </h2>
+                <div id="prod5" class="accordion-collapse collapse" data-bs-parent="#faqProductos">
+                    <div class="accordion-body">Sí, hay figuras con mensajes, kits, frascos, colgantes y más. Incluso podemos armar combos personalizados.</div>
+                </div>
+            </div>
+        </div>
+         <h3 class="mb-3">SOBRE TALLERES Y EVENTOS</h3>
+        <div class="accordion accordion-papelito-custom mb-4" id="faqPedidos">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pedido1">
+                       ¿Cómo reservo un taller o una decoración para evento?
+                    </button>
+                </h2>
+                <div id="pedido1" class="accordion-collapse collapse" data-bs-parent="#faqPedidos">
+                    <div class="accordion-body"> Escríbeme por WhatsApp con la fecha y la idea. Confirmamos disponibilidad y detalles juntas.
+                    </div>
+               </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pedido2">
+                       ¿Con cuánta anticipación debo reservar?
+                    </button>
+                </h2>
+                <div id="pedido2" class="accordion-collapse collapse" data-bs-parent="#faqPedidos">
+                <div class="accordion-body"> Lo ideal es hacerlo con al menos 2 semanas de anticipación. Las fechas se llenan rápido, sobre todo en temporada alta o durante ferias.</div>
+                </div>
+                 </div>
+             <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pedido3">
+                       ¿Los talleres tienen un costo fijo?
+                    </button>
+                </h2>
+                <div id="pedido3" class="accordion-collapse collapse" data-bs-parent="#faqPedidos">
+                    <div class="accordion-body">Depende del tipo de taller, la cantidad de personas y los materiales. Te paso una propuesta a medida.</div>
+            </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pedido4">
+                       ¿Haces talleres para empresas, colegios o cumpleaños?
+                    </button>
+                </h2>
+                <div id="pedido4" class="accordion-collapse collapse" data-bs-parent="#faqPedidos">
+                    <div class="accordion-body"> ¡Sí! Tengo propuestas adaptadas para distintos grupos. También podemos diseñar algo especial según lo que necesites.
+                        </div>
+            </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pedido5">
+                       ¿Los talleres son presenciales o virtuales?
+                    </button>
+                </h2>
+                <div id="pedido5" class="accordion-collapse collapse" data-bs-parent="#faqPedidos">
+                    <div class="accordion-body"> Ambos. Hay talleres online con kits y también presenciales en Quito.
+                         </div>
+                </div>
+            </div>
+        </div>
+
+     <h3 class="mb-3">SOBRE CONTACTO Y ATENCIÓN</h3>
+        <div class="accordion accordion-papelito-custom mb-4" id="faqProductos">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prod1">
+                       ¿Cuál es tu horario de atención?
+                    </button>
+                </h2>
+                <div id="prod1" class="accordion-collapse collapse" data-bs-parent="#faqProductos">
+                    <div class="accordion-body"> De lunes a viernes, de 9h00 a 18h00. Puedes escribir en cualquier momento, y responderé lo más pronto posible.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prod2">
+                       ¿Tienen tienda física?
+                    </button>
+                </h2>
+                <div id="prod2" class="accordion-collapse collapse" data-bs-parent="#faqProductos">
+                <div class="accordion-body"> No, pero puedes encontrar productos de Papelito en ferias y en tiendas colaboradoras. Lo comunico siempre por redes.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prod3">
+                      ¿Dónde puedo ver los precios?
+                    </button>
+                </h2>
+                <div id="prod3" class="accordion-collapse collapse" data-bs-parent="#faqProductos">
+                    <div class="accordion-body"> Muchos productos tienen el precio en la web. Si no lo encuentras o tienes una idea especial, escríbeme y te doy el valor exacto.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <h3 class="mb-3">SOBRE EL PROCESO</h3>
+        <div class="accordion accordion-papelito-custom mb-4" id="faqProductos">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prod1">
+                      ¿Se puede devolver un producto?
+                    </button>
+                </h2>
+                <div id="prod1" class="accordion-collapse collapse" data-bs-parent="#faqProductos">
+                    <div class="accordion-body"> No. Por tratarse de productos hechos a mano y por encargo, no se aceptan devoluciones por cambios de opinión.
+                    </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#prod2">
+                      ¿Puedo hacer un pedido grande o por cantidad?
+                    </button>
+                </h2>
+                <div id="prod2" class="accordion-collapse collapse" data-bs-parent="#faqProductos">
+                <div class="accordion-body"> ¡Sí! Ya sea para eventos, regalos o decoración. Mientras más anticipación tengamos, mejor.
+                </div>
+                </div>
+            </div>
+           
+            
+        </div>
+
+    </main>
+
+ 
+    <footer class="footer bg-body-tertiary mt-5 py-4">
+    <div class="container">
+      <div class="row">
+
+       
+        <div class="col-md-4 mb-4">
+          <h5 class="mb-2">INFORMACIÓN GENERAL</h5>
+          <div class="accordion" id="accordionFooter">
+            <div class="accordion-item mb-1">
+              <h2 class="accordion-header" id="headingCompra">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseCompra" aria-expanded="false" aria-controls="collapseCompra">
+                  Guía de compra
+                </button>
+              </h2>
+              <div id="collapseCompra" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                <div class="accordion-body">Para hacer un pedido, debes contactarme directamente. Coordinamos juntas los
+                  colores, cantidades, fechas y formas de entrega.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-1">
+              <h2 class="accordion-header" id="headingCambios">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseCambios" aria-expanded="false" aria-controls="collapseCambios">
+                  Cambios y devoluciones
+                </button>
+              </h2>
+              <div id="collapseCambios" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                <div class="accordion-body"> No se realizan devoluciones por cambios de opinión ni por detalles propios
+                  del trabajo artesanal.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-1">
+              <h2 class="accordion-header" id="headingTerminos">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTerminos" aria-expanded="false" aria-controls="collapseTerminos">
+                  Términos y condiciones
+                </button>
+              </h2>
+              <div id="collapseTerminos" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                <div class="accordion-body">
+                 El sitio web de Papelito presenta productos y servicios hechos a mano por Vero Terán Vaca. No se realizan compras en línea: para hacer un pedido, es necesario contactarnos directamente por WhatsApp.
+ – Todos los productos son hechos por encargo, de forma artesanal.
+ – Las imágenes son referenciales: puede haber variaciones en color, forma o tamaño.
+ – No se aceptan devoluciones por cambios de opinión.
+ – Los talleres y decoraciones para eventos requieren reserva anticipada.
+
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-1">
+              <h2 class="accordion-header" id="headingPrivacidad">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapsePrivacidad" aria-expanded="false" aria-controls="collapsePrivacidad">
+                  Políticas de Privacidad
+                </button>
+              </h2>
+              <div id="collapsePrivacidad" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                <div class="accordion-body">En Papelito respetamos tu privacidad. Si nos escribes a través del formulario, recopilamos únicamente tu nombre, número de teléfono y mensaje.
+ – Usamos esa información sólo para responder a tu consulta.
+ – No solicitamos datos bancarios.
+ – No compartimos tu información con terceros.
+ – Puedes solicitar la modificación o eliminación de tus datos en cualquier momento, escribiéndonos por WhatsApp.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item mb-1">
+              <h2 class="accordion-header" id="headingEnvios">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseEnvios" aria-expanded="false" aria-controls="collapseEnvios">
+                  Políticas de envío y entrega
+                </button>
+              </h2>
+              <div id="collapseEnvios" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+                <div class="accordion-body">Para hacer un pedido, debes contactarme directamente. Coordinamos juntas el
+                  metodo de envío.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+        <div class="col-md-4 mb-4">
+          <h5 class="mb-2">ACERCA DE NOSOTROS</h5>
+          <ul class="list-unstyled ps-1 " style="margin-bottom: 1rem;">
+            <li style="margin-bottom: 1rem;"><a href="./paginas/sobrepapelito.html" class="footer-link">Sobre
+                Papelito</a></li>
+            <li style="margin-bottom: 1rem;"><a href="./paginas/contactos.html" class="footer-link">Contactos</a></li>
+            <li style="margin-bottom: 1rem;"><a href="./preguntasfrecuentes.html" class="footer-link">Preguntas frecuentes</a></li>
+          </ul>
+        </div>
+
+        
+        <div class="col-md-4 mb-4">
+          <h5 class="mb-2">SÍGUENOS EN NUESTRAS REDES SOCIALES</h5>
+          <div class="d-flex gap-3 ps-1">
+            <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram icono-red"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook icono-red"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube icono-red"></i></a>
+            <a href="https://wa.me/123456789" target="_blank"><i class="bi bi-whatsapp icono-red"></i></a>
+            <a href="mailto:correo@papelito.com"><i class="bi bi-envelope-fill icono-red"></i></a>
+          </div>
+        </div>
+        <p class="mt-3 small text-muted">&copy; 2025 Papelito. Todos los derechos reservados.</p>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <a href="https://wa.me/598XXXXXXXX" class="btn-whatsapp" target="_blank"
+    aria-label="Enviarnos un mensaje por WhatsApp">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+  </a>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+

@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@keyframes navidad-gradient-move {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
 body {
   background-color: #F5F0EB;
   font-family: "Lato", sans-serif;
@@ -170,8 +178,6 @@ h5 {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* Cuando se hace foco, se expande el input */
-    /* También podés permitir que se expanda con el hover si querés */
   }
   .form-buscador .input-wrapper {
     position: relative;
@@ -548,7 +554,7 @@ h5 {
 
 .cardh .col-md-4 {
   display: flex;
-  align-items: center; /* centra verticalmente */
+  align-items: center;
 }
 
 .seccion-video {
@@ -789,6 +795,63 @@ form.d-flex input {
 .cardh .titulo-cardh {
   margin: 0.5rem !important;
   padding: 10px !important;
+}
+
+main .accordion .accordion-item {
+  background-color: #faf7f2;
+  border: 1px solid #faf7f2;
+  margin-bottom: 0.5rem;
+  border-radius: 0.375rem;
+}
+main .accordion .accordion-item .accordion-button {
+  background-color: #faf7f2;
+  color: #7e4f16;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
+main .accordion .accordion-item .accordion-button:not(.collapsed) {
+  background-color: #faf7f2;
+  color: #7e4f16;
+  box-shadow: none;
+}
+main .accordion .accordion-item .accordion-button:hover {
+  background-color: #f5f0eb;
+  color: #7e4f16;
+}
+main .accordion .accordion-item .accordion-button:focus {
+  border-color: rgba(190, 221, 157, 0.4784313725);
+  box-shadow: 0 0 0 0.25rem rgba(190, 221, 157, 0.3);
+}
+main .accordion .accordion-item .accordion-body {
+  background-color: #faf7f2;
+  color: #555;
+  padding: 1.25rem;
+  border-top: 1px solid #faf7f2;
+}
+
+.navidad-gradient {
+  display: inline-block; /* Asegura que el degradado se aplique bien */
+  background: linear-gradient(90deg, red, gold, green, gold, red);
+  background-size: 300% 300%;
+  animation: navidad-gradient-move 3s linear infinite;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* Necesario en Chrome/Edge */
+}
+.navidad-gradient:hover {
+  animation-duration: 1.5s;
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+@keyframes navidad-gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

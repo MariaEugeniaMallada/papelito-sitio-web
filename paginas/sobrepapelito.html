@@ -1,240 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Conocé la historia de Papelito: un emprendimiento artesanal de origami creado por Vero en Quito. Cada pieza está hecha a mano con amor, creatividad y propósito.">
-    <meta name="keywords"
-        content="Papelito, origami, origami artesanal, Vero, emprendimiento creativo, arte en papel, productos hechos a mano, Quito, decoración con papel, historia de Papelito, regalos originales, piezas únicas, manualidades en papel">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous" />
+    <meta
+      name="description"
+      content="Conocé la historia de Papelito: un emprendimiento artesanal de origami creado por Vero en Quito. Cada pieza está hecha a mano con amor, creatividad y propósito."
+    />
+    <meta
+      name="keywords"
+      content="Papelito, origami, origami artesanal, Vero, emprendimiento creativo, arte en papel, productos hechos a mano, Quito, decoración con papel, historia de Papelito, regalos originales, piezas únicas, manualidades en papel"
+    />
     <link
-        href="https://fonts.googleapis.com/css2?family=Lato&family=Poiret+One&family=Raleway:wght@400;600&display=swap"
-        rel="stylesheet">
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Poiret+One&family=Raleway:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>Papelito</title>
-    <link rel="shortcut icon" href="./imagenes/logo en negro.png" type="gatito de origami">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <title>Sobre Papelito</title>
+    <link
+      rel="shortcut icon"
+      href="./imagenes/logo en negro.png"
+      type="gatito de origami"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <!-- Primer nav: logo, buscador y botón hamburguesa juntos -->
-        <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-                <!-- Logo a la izquierda -->
-                <div class="logo-izquierda">
-                    <a class="navbar-brand" href="#">
-                        <img src="../imagenes/logo2.png" alt="Logo" class="logo-img" />
-                    </a>
-                </div>
+      <!-- Primer nav: logo, buscador y botón hamburguesa juntos -->
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <!-- Logo a la izquierda -->
+          <div class="logo-izquierda">
+            <a class="navbar-brand" href="#">
+              <img src="../imagenes/logo2.png" alt="Logo" class="logo-img" />
+            </a>
+          </div>
 
-                <!-- Buscador al centro -->
-                <div class="form-buscador">
-                    <form class="d-flex" role="search">
-                        <div class="input-wrapper">
-                            <input class="form-control buscador-input" type="search" placeholder="¿Qué estás buscando?"
-                                aria-label="Buscar" />
-                            <span class="lupa-icon"><i class="bi bi-search"></i></span>
-                        </div>
-                    </form>
-                </div>
+          <!-- Buscador al centro -->
+          <div class="form-buscador">
+            <form class="d-flex" role="search">
+              <div class="input-wrapper">
+                <input
+                  class="form-control buscador-input"
+                  type="search"
+                  placeholder="¿Qué estás buscando?"
+                  aria-label="Buscar"
+                />
+                <span class="lupa-icon"><i class="bi bi-search"></i></span>
+              </div>
+            </form>
+          </div>
 
-                <!-- Botón hamburguesa a la derecha -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </nav>
+          <!-- Botón hamburguesa a la derecha -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
 
-        <!-- Segundo nav: menú desplegable -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./productos.html">Productos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./talleres.html">Talleres</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./eventos.html">Eventos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./sobrepapelito.html">Sobre Papelito</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./contactos.html">Contáctanos</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+      <!-- Segundo nav: menú desplegable -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navidad-gradient" href="./navidad.html">Navidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./talleres.html">Talleres</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./eventos.html">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sobrepapelito.html"
+                  >Sobre Papelito</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contactos.html">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="card mb-3 cardh" style="max-width: 1440px;" data-aos="zoom-in-up">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="../imagenes/vero flores.jpeg" class="img-fluid rounded-start"
-                        alt="Chica con dos flores de origami en el pelo">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                       <h2 class="titulo-cardh">Sobre Papelito</h2>
-                        <p class="card-text">Hola, soy Vero, la persona detrás de Papelito. Este proyecto nació hace 10
-                            años con una idea simple: transformar papel en emoción. Desde entonces, he ido plegando no
-                            solo figuras, sino también historias, talleres, encuentros y momentos únicos.
-                            En Papelito todo se hace a mano y por encargo. Si te interesa un producto, puedes escribirme
-                            directamente para elegir colores, cantidad y diseños, y así coordinamos tu pedido. También
-                            puedes reservar fechas para talleres o para la decoración de eventos. Todo se diseña a
-                            medida, con tiempo y cariño.
-                            Además de crear objetos, también comparto experiencias: doy talleres para niñas, niños,
-                            grupos de amigas, empresas y celebraciones especiales. Y si estás organizando un evento,
-                            puedo ayudarte con la decoración hecha a medida, con piezas que hablen de ti o de lo que
-                            están celebrando.
-                            Cada pedido es único y lo armamos juntas. Si te inspira este universo de papel, estás más
-                            que invitada a sumarte.
-
-                        </p>
-                    </div>
-                </div>
+      <div
+        class="card mb-3 cardh"
+        style="max-width: 1440px"
+        data-aos="zoom-in-up"
+      >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              src="../imagenes/vero flores.jpeg"
+              class="img-fluid rounded-start"
+              alt="Chica con dos flores de origami en el pelo"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="titulo-cardh">Sobre Papelito</h2>
+              <p class="card-text">
+                Hola, soy Vero, la persona detrás de Papelito. Este proyecto
+                nació hace 10 años con una idea simple: transformar papel en
+                emoción. Desde entonces, he ido plegando no solo figuras, sino
+                también historias, talleres, encuentros y momentos únicos. En
+                Papelito todo se hace a mano y por encargo. Si te interesa un
+                producto, puedes escribirme directamente para elegir colores,
+                cantidad y diseños, y así coordinamos tu pedido. También puedes
+                reservar fechas para talleres o para la decoración de eventos.
+                Todo se diseña a medida, con tiempo y cariño. Además de crear
+                objetos, también comparto experiencias: doy talleres para niñas,
+                niños, grupos de amigas, empresas y celebraciones especiales. Y
+                si estás organizando un evento, puedo ayudarte con la decoración
+                hecha a medida, con piezas que hablen de ti o de lo que están
+                celebrando. Cada pedido es único y lo armamos juntas. Si te
+                inspira este universo de papel, estás más que invitada a
+                sumarte.
+              </p>
             </div>
+          </div>
         </div>
+      </div>
     </main>
     <footer class="footer bg-body-tertiary mt-5 py-4">
-        <div class="container">
-            <div class="row">
-
-                <!-- Columna 1: Información general con acordeón -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="mb-2">INFORMACIÓN GENERAL</h5>
-                    <div class="accordion" id="accordionFooter">
-                        <div class="accordion-item mb-1">
-                            <h2 class="accordion-header" id="headingCompra">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseCompra" aria-expanded="false"
-                                    aria-controls="collapseCompra">
-                                    Guía de compra
-                                </button>
-                            </h2>
-                            <div id="collapseCompra" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFooter">
-                                <div class="accordion-body">Para hacer un pedido, debes contactarme directamente.
-                                    Coordinamos juntas los colores, cantidades, fechas y formas de entrega.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item mb-1">
-                            <h2 class="accordion-header" id="headingCambios">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseCambios" aria-expanded="false"
-                                    aria-controls="collapseCambios">
-                                    Cambios y devoluciones
-                                </button>
-                            </h2>
-                            <div id="collapseCambios" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFooter">
-                                <div class="accordion-body"> No se realizan devoluciones por cambios de opinión ni por
-                                    detalles propios del trabajo artesanal.</div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item mb-1">
-                            <h2 class="accordion-header" id="headingTerminos">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTerminos" aria-expanded="false"
-                                    aria-controls="collapseTerminos">
-                                    Términos y condiciones
-                                </button>
-                            </h2>
-                            <div id="collapseTerminos" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFooter">
-                                <div class="accordion-body">
-                                    Todos los productos de Papelito son hechos a mano y por encargo. Las fotos son
-                                    referenciales, por lo que pueden haber pequeñas variaciones en color o forma.
-                                    Los talleres y decoraciones para eventos requieren reserva previa. La fecha debe
-                                    confirmarse con anticipación y puede requerir un adelanto.
-                                    Todos los textos, fotos y diseños son propiedad de Papelito.
-                                    Gracias por apoyar lo hecho con tiempo, manos y corazón.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item mb-1">
-                            <h2 class="accordion-header" id="headingPrivacidad">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapsePrivacidad" aria-expanded="false"
-                                    aria-controls="collapsePrivacidad">
-                                    Políticas de Privacidad
-                                </button>
-                            </h2>
-                            <div id="collapsePrivacidad" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFooter">
-                                <div class="accordion-body">En Papelito, nos comprometemos a proteger la información que
-                                    nos brindes. A través del formulario de contacto, se recopilan los siguientes datos:
-                                    nombre, teléfono y mensaje.
-                                    Estos datos serán utilizados exclusivamente para responder a tus consultas y no
-                                    serán compartidos con terceros. No se almacenan datos bancarios ni se realizan
-                                    transacciones online a través del sitio.
-                                    Podés solicitarnos en cualquier momento la modificación o eliminación de tus datos
-                                    escribiendo a nuestro WhatsApp.
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accordion-item mb-1">
-                            <h2 class="accordion-header" id="headingEnvios">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseEnvios" aria-expanded="false"
-                                    aria-controls="collapseEnvios">
-                                    Políticas de envío y entrega
-                                </button>
-                            </h2>
-                            <div id="collapseEnvios" class="accordion-collapse collapse"
-                                data-bs-parent="#accordionFooter">
-                                <div class="accordion-body">Para hacer un pedido, debes contactarme directamente.
-                                    Coordinamos juntas el metodo de envío.</div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="row">
+          <!-- Columna 1: Información general con acordeón -->
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-2">INFORMACIÓN GENERAL</h5>
+            <div class="accordion" id="accordionFooter">
+              <div class="accordion-item mb-1">
+                <h2 class="accordion-header" id="headingCompra">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseCompra"
+                    aria-expanded="false"
+                    aria-controls="collapseCompra"
+                  >
+                    Guía de compra
+                  </button>
+                </h2>
+                <div
+                  id="collapseCompra"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFooter"
+                >
+                  <div class="accordion-body">
+                    Para hacer un pedido, debes contactarme directamente.
+                    Coordinamos juntas los colores, cantidades, fechas y formas
+                    de entrega.
+                  </div>
                 </div>
+              </div>
 
-                <!-- Columna 2: Acerca de nosotros -->
-                <div class="col-md-4 mb-4" style="margin-bottom: 1rem;">
-                    <h5 class="mb-2">ACERCA DE NOSOTROS</h5>
-                    <ul class="list-unstyled ps-1" style="margin-bottom: 1rem;">
-                        <li style="margin-bottom: 1rem;"><a href="./sobrepapelito.html" class="footer-link">Sobre
-                                Papelito</a></li>
-                        <li style="margin-bottom: 1rem;"><a href="./contactos.html" class="footer-link">Contactos</a>
-                        </li>
-                        <li style="margin-bottom: 1rem;"><a href="#" class="footer-link">Preguntas frecuentes</a></li>
-                    </ul>
+              <div class="accordion-item mb-1">
+                <h2 class="accordion-header" id="headingCambios">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseCambios"
+                    aria-expanded="false"
+                    aria-controls="collapseCambios"
+                  >
+                    Cambios y devoluciones
+                  </button>
+                </h2>
+                <div
+                  id="collapseCambios"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFooter"
+                >
+                  <div class="accordion-body">
+                    No se realizan devoluciones por cambios de opinión ni por
+                    detalles propios del trabajo artesanal.
+                  </div>
                 </div>
+              </div>
 
-                <!-- Columna 3: Redes sociales -->
-                <div class="col-md-4 mb-4">
-                    <h5 class="mb-2">SÍGUENOS EN NUESTRAS REDES SOCIALES</h5>
-                    <div class="d-flex gap-3 ps-1">
-                        <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram icono-red"></i></a>
-                        <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook icono-red"></i></a>
-                        <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube icono-red"></i></a>
-                        <a href="https://wa.me/123456789" target="_blank"><i class="bi bi-whatsapp icono-red"></i></a>
-                        <a href="mailto:correo@papelito.com"><i class="bi bi-envelope-fill icono-red"></i></a>
-                    </div>
+              <div class="accordion-item mb-1">
+                <h2 class="accordion-header" id="headingTerminos">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTerminos"
+                    aria-expanded="false"
+                    aria-controls="collapseTerminos"
+                  >
+                    Términos y condiciones
+                  </button>
+                </h2>
+                <div
+                  id="collapseTerminos"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFooter"
+                >
+                  <div class="accordion-body">
+                    El sitio web de Papelito presenta productos y servicios
+                    hechos a mano por Vero Terán Vaca. No se realizan compras en
+                    línea: para hacer un pedido, es necesario contactarnos
+                    directamente por WhatsApp. – Todos los productos son hechos
+                    por encargo, de forma artesanal. – Las imágenes son
+                    referenciales: puede haber variaciones en color, forma o
+                    tamaño. – No se aceptan devoluciones por cambios de opinión.
+                    – Los talleres y decoraciones para eventos requieren reserva
+                    anticipada.
+                  </div>
                 </div>
-                <p class="mt-3 small text-muted">&copy; 2025 Papelito. Todos los derechos reservados.</p>
+              </div>
 
+              <div class="accordion-item mb-1">
+                <h2 class="accordion-header" id="headingPrivacidad">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsePrivacidad"
+                    aria-expanded="false"
+                    aria-controls="collapsePrivacidad"
+                  >
+                    Políticas de Privacidad
+                  </button>
+                </h2>
+                <div
+                  id="collapsePrivacidad"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFooter"
+                >
+                  <div class="accordion-body">
+                    En Papelito respetamos tu privacidad. Si nos escribes a
+                    través del formulario, recopilamos únicamente tu nombre,
+                    número de teléfono y mensaje. – Usamos esa información sólo
+                    para responder a tu consulta. – No solicitamos datos
+                    bancarios. – No compartimos tu información con terceros. –
+                    Puedes solicitar la modificación o eliminación de tus datos
+                    en cualquier momento, escribiéndonos por WhatsApp.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item mb-1">
+                <h2 class="accordion-header" id="headingEnvios">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseEnvios"
+                    aria-expanded="false"
+                    aria-controls="collapseEnvios"
+                  >
+                    Políticas de envío y entrega
+                  </button>
+                </h2>
+                <div
+                  id="collapseEnvios"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionFooter"
+                >
+                  <div class="accordion-body">
+                    Para hacer un pedido, debes contactarme directamente.
+                    Coordinamos juntas el metodo de envío.
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <!-- Columna 2: Acerca de nosotros -->
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-2">ACERCA DE NOSOTROS</h5>
+            <ul class="list-unstyled ps-1" style="margin-bottom: 1rem">
+              <li style="margin-bottom: 1rem">
+                <a href="./sobrepapelito.html" class="footer-link"
+                  >Sobre Papelito</a
+                >
+              </li>
+              <li style="margin-bottom: 1rem">
+                <a href="./contactos.html" class="footer-link">Contactos</a>
+              </li>
+              <li style="margin-bottom: 1rem">
+                <a href="./preguntasfrecuentes.html" class="footer-link"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Redes sociales -->
+          <div class="col-md-4 mb-4">
+            <h5 class="mb-2">SÍGUENOS EN NUESTRAS REDES SOCIALES</h5>
+            <div class="d-flex gap-3 ps-1">
+              <a href="https://instagram.com" target="_blank"
+                ><i class="bi bi-instagram icono-red"></i
+              ></a>
+              <a href="https://facebook.com" target="_blank"
+                ><i class="bi bi-facebook icono-red"></i
+              ></a>
+              <a href="https://youtube.com" target="_blank"
+                ><i class="bi bi-youtube icono-red"></i
+              ></a>
+              <a href="https://wa.me/123456789" target="_blank"
+                ><i class="bi bi-whatsapp icono-red"></i
+              ></a>
+              <a href="mailto:correo@papelito.com"
+                ><i class="bi bi-envelope-fill icono-red"></i
+              ></a>
+            </div>
+          </div>
+          <p class="mt-3 small text-muted">
+            &copy; 2025 Papelito. Todos los derechos reservados.
+          </p>
         </div>
+      </div>
     </footer>
-    <a href="https://wa.me/598XXXXXXXX" class="btn-whatsapp" target="_blank"
-        aria-label="Enviarnos un mensaje por WhatsApp">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+
+    <a
+      href="https://wa.me/598XXXXXXXX"
+      class="btn-whatsapp"
+      target="_blank"
+      aria-label="Enviarnos un mensaje por WhatsApp"
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+        alt="WhatsApp"
+      />
     </a>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
